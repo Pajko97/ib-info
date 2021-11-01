@@ -6,7 +6,7 @@
       <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_1.png" />
         <h3 class="text-4xl pb-2 font-bold pt-5">Premium metal</h3>
-        <p class="text-xl pb-5">
+        <p class="text-xl pb-5 text-center">
           Our most exclusive product - premium, innovative, bespoke.
         </p>
         <button
@@ -30,7 +30,7 @@
       <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_2.png" />
         <h3 class="text-4xl pb-2 font-bold pt-5">Bamboo</h3>
-        <p class="text-xl pb-5 pl-10 pr-10 mr-10 ml-10">
+        <p class="text-xl pb-5 pl-10 text-center pr-10 mr-10 ml-10">
           Our most exclusive product - premium, innovative, bespoke.
         </p>
         <button
@@ -53,7 +53,7 @@
 
       <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_3.png" />
-        <h3 class="text-4xl pb-2 font-bold pt-5">PVC Plastic</h3>
+        <h3 class="text-4xl pb-2 font-bold pt-5 text-center">PVC Plastic</h3>
         <p class="text-xl pb-5">
           Our most exclusive product - premium, innovative, bespoke.
         </p>

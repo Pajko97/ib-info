@@ -23,7 +23,6 @@
               text-black text-3xl
               bg-white
               rounded-full
-              -pt-7
               pl-7
               pr-7
             "
@@ -121,7 +120,7 @@
           >
             1
           </div>
-          <h1 class="text-5xl">Purchase your card</h1>
+          <h1 class="text-5xl text-center">Purchase your card</h1>
           <p class="text-gray-600 text-xl text-center">
             After placing your order, you will receive instructions on how to
             provide us with your logo or design for on the card.
@@ -143,7 +142,7 @@
           >
             2
           </div>
-          <h1 class="text-5xl">Create your profile</h1>
+          <h1 class="text-5xl text-center">Create your profile</h1>
           <p class="text-gray-600 text-xl text-center">
             Here you can add, edit & enable what you would like to share with
             your contactless card.
@@ -165,7 +164,7 @@
           >
             3
           </div>
-          <h1 class="text-5xl">Tap, Share & Go</h1>
+          <h1 class="text-5xl text-center">Tap, Share & Go</h1>
           <p class="text-gray-600 text-xl text-center">
             It's that simple! Share who you are and what you do with with one
             quick tap.
