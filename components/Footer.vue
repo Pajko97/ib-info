@@ -1,21 +1,21 @@
 <template>
     <div class="theme-color-1 flex flex-row justify-around pt-10 pb-10 pl-40 pr-10">
        <img src="../static/images/logo_footer.png">
-       <div class="flex flex-col text-2xl text-white pt-5 pr-10">
+       <div class="flex flex-col text-lg text-white pt-5 pr-10">
            <a class="pb-8">PRODUCTS</a>
            <a class="pb-8">COMPATIBILITY LIST</a>
            <a class="pb-8">HAPPY CUSTOMERS</a>
            <a class="pb-8">LOGIN</a>
        </div>
 
-        <div class="flex flex-col text-2xl text-white pt-5 pr-10">
+        <div class="flex flex-col text-lg text-white pt-5 pr-10">
            <a class="pb-8">FAQ</a>
            <a class="pb-8">CONTACT</a>
            <a class="pb-8">AFFILIATE PROGRAM</a>
            <a class="pb-8">ORDER TRACKER</a>
        </div>
 
-        <div class="flex flex-col items-start text-2xl text-white pt-5 pr-10">
+        <div class="flex flex-col items-start text-lg text-white pt-5 pr-10">
            <a class="pb-8">REFUND AND SHIPPING POLICY</a>
            <a class="pb-8">PRIVACY POLICY</a>
            <div class="flex flex-row items-center justify-center">

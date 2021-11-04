@@ -3,6 +3,7 @@
   <div>
     <NavbarBlack/>
     <CompatibilityContent/>
+    <Footer/>
   </div>
 </template>
 

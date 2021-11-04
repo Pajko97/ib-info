@@ -1,30 +1,29 @@
 <template>
   <div>
-    <div class="section-1 flex flex-col items-center justify-center">
+    <div class="section-1 h-screen flex flex-col items-center justify-center">
       <div class="flex flex-col items-center justify-center">
         <Navbar />
         <div class="flex flex-col justify-space-around">
           <h1
-            class="text-center text-white mr-20 ml-20 text-6xl pr-5 pl-5 mt-20"
+            class="text-center text-white text-6xl pr-5 pl-5 mt-20"
           >
-            I-B CARD WAY OF NETWORKING
+            UNLEASH POWER OF NETWORKING
           </h1>
-          <p class="text-white text-3xl my-5 text-center ml-48 mr-48">
-            I - business cards come with integrated NFC technology, which
-            enables you to transmit your contact details, socials & so much more
-            into any smartphone with no app needed.
+          <p class="text-white text-5xl my-5 text-center ml-48 mr-48">
+            Share information with just a tap
           </p>
         </div>
         <div class="flex flex-row my-10">
-          <img src="../static/images/slider.png" class="mx-10" />
           <button
             class="
               btn
               text-black text-3xl
               bg-white
               rounded-full
-              pl-7
-              pr-7
+              pl-10
+              pt-3
+              pb-3
+              pr-10
             "
           >
             See Products
@@ -38,9 +37,10 @@
     </div>
 
     <div class="section-2 flex flex-row bg-white">
-      <div class="flex flex-col pt-20 pl-20 pb-20 items-start justify-start">
-        <h1 class="text-5xl">WE ARE PRESENTING I - BUSINESS CARD</h1>
-        <h3 class="text-4xl font-bold pt-5 pb-5 text-gray-500">
+      <div class="flex flex-col items-start pt-20 pl-20 pb-20">
+        <h1 class="text-6xl">CARD4LIFE</h1>
+        <h1 class="text-5xl text-gray-400">I - BUSINESS CARD</h1>
+        <h3 class="text-4xl font-bold pt-5 pb-5 text-gray-400">
           Instantly transfer any information.
         </h3>
         <p class="text-3xl">
@@ -65,22 +65,28 @@
           SEE ALL PRODUCTS
         </button>
       </div>
-      <img src="../static/images/video.png" />
+     
     </div>
 
-    <div class="section-3 flex flex-row justify-center items-center">
+    <div class="section-3 flex flex-row justify-evenly items-center">
       <p class="text-2xl text-gray-600 font-bold mr-20">
         Join the 100+ companies using I-B CARD.
       </p>
-      <img src="../static/images/companies.png" />
+      <div class="flex flex-row justify-evenly items-evenly">
+        <img class="max-w-xs max-h-20" src="../static/images/google_logo.png">
+        <img class="max-w-xs max-h-20" src="../static/images/microsoft_logo.png">
+        <img class="max-w-xs max-h-20" src="../static/images/apple_logo.png">
+        <img class="max-w-xs max-h-20" src="../static/images/amazon_logo.png">
+
+      </div>
     </div>
 
     <div
       class="section-4 pl-40 flex flex-col h-screen justify-center items-start"
     >
-      <p class="text-6xl text-white font-semibold">Choose your</p>
-      <p class="text-6xl text-white font-semibold">Premium</p>
-      <p class="text-6xl text-white font-semibold">CARD4LIFE</p>
+      <p class="text-4xl text-white font-semibold">Choose your</p>
+      <p class="text-4xl text-white font-semibold">Premium</p>
+      <p class="text-4xl text-white font-semibold">CARD4LIFE</p>
       <button
         class="
           btn
@@ -89,8 +95,9 @@
           pl-5
           pr-5
           mt-3
+          -ml-3
           bg-transparent
-          text-4xl text-white
+          text-3xl text-white
           border-2 border-white
           rounded-full
         "
@@ -101,8 +108,11 @@
     <div
       class="section-5 flex flex-col items-center justify-center mr-20 ml-20"
     >
-      <h1 class="text-6xl mt-20 mb-20">
-        Go contactless in <span class="underline">three simple steps!</span>
+      <h1 class="text-5xl pb-3 mt-20 mb-20 flex-col font-semibold">
+        Go contactless in three simple steps!
+        <div class="flex flex-row">
+          <hr class="bg-black solid w-full" />
+        </div>
       </h1>
       <div class="flex flex-row justify-center mt-20 mb-20 items-space-around">
         <div class="as flex flex-col items-center justify-center ml-5 mr-5">
@@ -120,7 +130,7 @@
           >
             1
           </div>
-          <h1 class="text-5xl text-center">Purchase your card</h1>
+          <h1 class="text-4xl text-center mr-5 ml-5">Purchase your card</h1>
           <p class="text-gray-600 text-xl text-center">
             After placing your order, you will receive instructions on how to
             provide us with your logo or design for on the card.
@@ -142,7 +152,7 @@
           >
             2
           </div>
-          <h1 class="text-5xl text-center">Create your profile</h1>
+          <h1 class="text-4xl text-center">Create your profile</h1>
           <p class="text-gray-600 text-xl text-center">
             Here you can add, edit & enable what you would like to share with
             your contactless card.
@@ -164,7 +174,7 @@
           >
             3
           </div>
-          <h1 class="text-5xl text-center">Tap, Share & Go</h1>
+          <h1 class="text-4xl text-center">Tap, Share & Go</h1>
           <p class="text-gray-600 text-xl text-center">
             It's that simple! Share who you are and what you do with with one
             quick tap.
@@ -172,14 +182,17 @@
         </div>
       </div>
 
-      <div class="flex flex-row mt-20 mt-20 mb-20 items-center">
-        <iframe
-          width="1020"
-          height="415"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-        ></iframe>
+      <div class="flex items-center">
+          <iframe
+            height="350"
+            width="600"
+            className="absolute top-0 left-0 w-full"
+            src="https://www.youtube.com/embed/zihoyz0u_cs"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         <img class="mr-14 ml-14" src="../static/images/pointer.png" />
-        <h1 class="text-7xl mr-12 ml-12 text-grey-600">
+        <h1 class="text-5xl text-grey-600">
           How to SET UP and use card in 4 easy steps!
         </h1>
       </div>
@@ -189,36 +202,39 @@
       class="section-6 flex flex-col items-center justify-center mr-20 ml-20"
     >
       <h1 class="text-6xl mt-20 mb-20">
-        <span class="underline">See how our customer</span> are using the i-b
+        <span class="pt-5 mt-5 underline">See how our customer</span> are using the i-b
         cards.
       </h1>
       <div class="flex flex-row">
-        <div class="flex flex-col justify-center items-center ml-12 mr-12">
-          <img height="200" src="../static/images/iphone_mockup.png" />
-          <h3 class="text-3xl font-bold text-center">Digital business card</h3>
-          <p class="text-xl text-center">
+        <div class="flex flex-col justify-start items-center mx-14">
+          <img src="../static/images/iphone_mockup.png" />
+          <h3 class="text-2xl font-semibold text-center py-5">Digital business card</h3>
+          <p class="text-base text-center">
             Sharing their contact details, addresses, websites & emails easily.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center ml-12 mr-12">
-          <img height="200" src="../static/images/iphone_mockup.png" />
-          <h3 class="text-3xl font-bold text-center">Profile hub</h3>
-          <p class="text-xl text-center">
-            Sharing their contact details, addresses, websites & emails easily.
+        <div class="flex flex-col justify-start items-center mx-14">
+          <img  src="../static/images/iphone_mockup.png" />
+          <h3 class="text-2xl font-bold text-center py-5">Profile hub</h3>
+          <p class="text-base text-center">
+            Sharing everything about who you are and what you do.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center ml-12 mr-12">
-          <img height="200" src="../static/images/iphone_mockup.png" />
-          <h3 class="text-3xl font-bold text-center">Lead generation tool</h3>
-          <p class="text-xl text-center">
-            Sharing their contact details, addresses, websites & emails easily.
+
+       <div class="flex flex-col justify-start items-center mx-14">
+          <img src="../static/images/iphone_mockup.png" />
+          <h3 class="text-2xl font-bold text-center py-5">Lead tool</h3>
+          <p class="text-base text-center">
+              More leads and appointments there and then.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center ml-12 mr-12">
-          <img height="200" src="../static/images/iphone_mockup.png" />
-          <h3 class="text-3xl font-bold text-center">Link to any URL</h3>
-          <p class="text-xl text-center">
-            Sharing their contact details, addresses, websites & emails easily.
+
+        <div class="flex flex-col justify-start items-center mx-14">
+          <img src="../static/images/iphone_mockup.png" />
+          <h3 class="text-2xl font-bold text-center py-5">Link to any URL</h3>
+          <p class="text-base text-center">
+            Linking to any digital presence.
+            Apps, Videos, E-menus & PDFs.
           </p>
         </div>
       </div>
@@ -236,7 +252,7 @@
         mb-20
       "
     >
-      <div class="ml-5 mr-5 flex flex-col items-center justify-center">
+      <div class="ml-5 mr-5 flex flex-col items-center justify-evenly">
         <div class="flex flex-row items-space-around mb-5">
           <img class="pl-1 pr-1" src="../static/images/star.png" />
           <img class="pl-1 pr-1" src="../static/images/star.png" />
@@ -245,18 +261,41 @@
           <img class="pl-1 pr-1" src="../static/images/star.png" />
         </div>
         <p class="text-2xl font-bold text-center">
-          "I love these cards, and i love Sandro Hamzic because he has such a
-          big dick."
+          "Love this card, everyone I show this to is amazed by how innovative it is!"
+        </p>
+           <div class="flex flex-row justify-center items-center">
+            <img
+              class="rounded-full max-w-xs max-h-12 mr-5"
+              src="../static/images/review_image.png"
+            />
+         
+          <div class="flex flex-col">
+            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
+            <p class="text-gray-600">Verified customer</p>
+          </div>
+        </div>
+       
+      </div>
+
+    <div class="ml-5 mr-5 flex flex-col items-center justify-center">
+        <div class="flex flex-row items-space-around mb-5">
+          <img class="pl-1 pr-1" src="../static/images/star.png" />
+          <img class="pl-1 pr-1" src="../static/images/star.png" />
+          <img class="pl-1 pr-1" src="../static/images/star.png" />
+          <img class="pl-1 pr-1" src="../static/images/star.png" />
+          <img class="pl-1 pr-1" src="../static/images/star.png" />
+        </div>
+        <p class="text-2xl font-bold text-center">
+          "Love the physical product."
         </p>
         <div class="flex flex-row justify-center items-center">
-          <div class="rounded-full bg-black mr-5">
             <img
-              class="rounded-full bg-black pt-2 pb-2 pl-5 pr-5"
-              src="../static/images/star.png"
+              class="rounded-full max-w-xs max-h-12 mr-5"
+              src="../static/images/review_image.png"
             />
-          </div>
+         
           <div class="flex flex-col">
-            <h3 class="text-2xl pt-5">Jihene Ben Abderjazavac</h3>
+            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
             <p class="text-gray-600">Verified customer</p>
           </div>
         </div>
@@ -275,40 +314,13 @@
           big dick."
         </p>
         <div class="flex flex-row justify-center items-center">
-          <div class="rounded-full bg-black mr-5">
             <img
-              class="rounded-full bg-black pt-2 pb-2 pl-5 pr-5"
-              src="../static/images/star.png"
+              class="rounded-full max-w-xs max-h-12 mr-5"
+              src="../static/images/review_image.png"
             />
-          </div>
+         
           <div class="flex flex-col">
-            <h3 class="text-2xl pt-5">Jihene Ben Abderjazavac</h3>
-            <p class="text-gray-600">Verified customer</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ml-5 mr-5 flex flex-col items-center justify-center">
-        <div class="flex flex-row items-space-around mb-5">
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-        </div>
-        <p class="text-2xl font-bold text-center">
-          "I love these cards, and i love Sandro Hamzic because he has such a
-          big dick."
-        </p>
-        <div class="flex flex-row justify-center items-center">
-          <div class="rounded-full bg-black mr-5">
-            <img
-              class="rounded-full bg-black pt-2 pb-2 pl-5 pr-5"
-              src="../static/images/star.png"
-            />
-          </div>
-          <div class="flex flex-col">
-            <h3 class="text-2xl pt-5">Jihene Ben Abderjazavac</h3>
+            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
             <p class="text-gray-600">Verified customer</p>
           </div>
         </div>
@@ -320,6 +332,11 @@
     <Footer />
   </div>
 </template>
+<script lang="ts">
+require('nuxt-video-player/src/assets/css/main.css')
+
+
+</script>
 
 <style scoped>
 .section-1 {
@@ -342,12 +359,21 @@
 .section-8 {
   background-image: url('../static/images/section_8_bg.png');
   background-repeat: no-repeat;
-  background-position: 0px -200px;
+  background-position: center;
   background-size: cover;
 }
 
 .theme-color-1 {
   background-color: #231f20;
+}
+
+.video_1 {
+  width: 500px!important;
+}
+
+hr.solid {
+  
+  border-top: 3px solid #000000;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
@@ -358,5 +384,5 @@
 }
 </style>
 
-<script lang="ts">
-</script>
+
+

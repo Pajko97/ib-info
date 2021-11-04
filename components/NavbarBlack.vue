@@ -1,7 +1,7 @@
 <template>
     <div class="flex-row bg-transparent">
         <div class="flex justify-center pt-5 pb-5 items-center">
-            <NuxtLink to="/"><img width="170" height="200" class="align-self-center pt-10" src="../static/images/logo_black.png"/></NuxtLink>
+            <NuxtLink to="/"><img class="w-20 h-full pt-10" src="../static/images/logo_black.png"/></NuxtLink>
         </div>
         <ul class="flex justify-center pb-5">
             <li class="pr-8 text-black text-2xl"><NuxtLink to="/products">Products</NuxtLink></li>

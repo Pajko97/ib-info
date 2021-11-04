@@ -1,78 +1,78 @@
 <template>
   <div class="flex flex-col justify-center pt-20 pb-20 items-center">
-    <h1 class="text-6xl text-left pb-20">C4L Digital Business Products</h1>
+    <h1 class="text-4xl text-left pb-20">C4L Digital Business Products</h1>
 
-    <div class="flex flex-row">
+    <div class="flex flex-row justify-evenly items-center ml-40 mr-40 ">
       <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_1.png" />
-        <h3 class="text-4xl pb-2 font-bold pt-5">Premium metal</h3>
-        <p class="text-xl pb-5 text-center">
+        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Premium metal</h3>
+        <p class="text-lg pb-5 text-center pl-10 pr-10">
           Our most exclusive product - premium, innovative, bespoke.
         </p>
-        <button
+       <button
           class="
-            pr-5
-            pl-5
-            pt-2
-            pb-2
+            pr-9
+            pl-9
+            pt-6
+            pb-6
             btn
             rounded-full
-            text-2xl
+            text-xl
             theme-color-1
             text-white
           "
         >
           FIND OUT MORE
         </button>
-        <p class="text-2xl font-bold pt-10">FROM 889,00 KN</p>
+        <p class="text-xl font-bold pt-10">FROM 889,00 KN</p>
       </div>
 
-      <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_2.png" />
-        <h3 class="text-4xl pb-2 font-bold pt-5">Bamboo</h3>
-        <p class="text-xl pb-5 pl-10 text-center pr-10 mr-10 ml-10">
-          Our most exclusive product - premium, innovative, bespoke.
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">Bamboo</h3>
+        <p class="text-lg pb-5 text-center pl-10 pr-10">
+          Eco Friendly. With every card sold we plant a tree around the world.
         </p>
         <button
           class="
-            pr-5
-            pl-5
-            pt-2
-            pb-2
+            pr-9
+            pl-9
+            pt-6
+            pb-6
             btn
             rounded-full
-            text-2xl
+            text-xl
             theme-color-1
             text-white
           "
         >
           FIND OUT MORE
         </button>
-        <p class="text-2xl font-bold pt-10">FROM 359,00 KN</p>
+        <p class="text-xl font-bold pt-10">FROM 889,00 KN</p>
       </div>
 
       <div class="flex flex-col justify-center items-center">
         <img src="../static/images/card_3.png" />
-        <h3 class="text-4xl pb-2 font-bold pt-5 text-center">PVC Plastic</h3>
-        <p class="text-xl pb-5">
-          Our most exclusive product - premium, innovative, bespoke.
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">PVC Plastic</h3>
+        <p class="text-lg pb-5 text-center pl-10 pr-10">
+          Our most budget friendly card for contactless networking.
         </p>
         <button
           class="
-            pr-5
-            pl-5
-            pt-2
-            pb-2
+            pr-9
+            pl-9
+            pt-6
+            pb-6
             btn
             rounded-full
-            text-2xl
+            text-xl
             theme-color-1
             text-white
           "
         >
           FIND OUT MORE
         </button>
-        <p class="text-2xl font-bold pt-10">FROM 256,00 KN</p>
+        <p class="text-xl font-bold pt-10">FROM 256,00 KN</p>
       </div>
     </div>
   </div>

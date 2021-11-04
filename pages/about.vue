@@ -2,6 +2,8 @@
 <template>
   <div>
     <NavbarBlack/>
+    <AboutContent/>
+    <Footer/>
   </div>
 </template>
 
