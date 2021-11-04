@@ -6,14 +6,14 @@
         <ul class="flex justify-center pb-5">
             <li class="pr-8 text-white text-2xl"><NuxtLink to="/products">Products</NuxtLink></li>
             <li class="pr-8 text-white text-2xl"><NuxtLink to="/compatibility">Compatibility list</NuxtLink></li>
-            <li class="pr-8 text-white text-2xl">
+         <!--    <li class="pr-8 text-white text-2xl">
                 <div class="flex-flex-col justify-center items-center">
                     <li class="pr-8 text-white text-2xl">
                         Company Portal
                     </li>
                     <p class="text-sm text-center -ml-10">Coming Soon</p>
                 </div>
-            </li>
+            </li> -->
             <li class="pr-8 text-white font-normal text-2xl"><NuxtLink to="/about">About us</NuxtLink></li>
             <li class="pr-8 text-white text-2xl"><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>

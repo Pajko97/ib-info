@@ -38,7 +38,7 @@
 
     <div class="section-2 flex flex-row bg-white">
       <div class="flex flex-col items-start pt-20 pl-20 pb-20">
-        <h1 class="text-6xl">CARD4LIFE</h1>
+        <h1 class="text-8xl">CARD4LIFE</h1>
         <h1 class="text-5xl text-gray-400">I - BUSINESS CARD</h1>
         <h3 class="text-4xl font-bold pt-5 pb-5 text-gray-400">
           Instantly transfer any information.
@@ -65,20 +65,14 @@
           SEE ALL PRODUCTS
         </button>
       </div>
-     
+     <img src="../static/images/video_2.png"/>
     </div>
 
     <div class="section-3 flex flex-row justify-evenly items-center">
-      <p class="text-2xl text-gray-600 font-bold mr-20">
+      <p class="text-2xl text-gray-600 font-bold ml-20 mr-20">
         Join the 100+ companies using I-B CARD.
       </p>
-      <div class="flex flex-row justify-evenly items-evenly">
-        <img class="max-w-xs max-h-20" src="../static/images/google_logo.png">
-        <img class="max-w-xs max-h-20" src="../static/images/microsoft_logo.png">
-        <img class="max-w-xs max-h-20" src="../static/images/apple_logo.png">
-        <img class="max-w-xs max-h-20" src="../static/images/amazon_logo.png">
-
-      </div>
+      <img src="../static/images/companies_2.png"/>
     </div>
 
     <div
@@ -159,7 +153,7 @@
           </p>
         </div>
 
-        <div class="as flex flex-col items-center justify-center ml-5 mr-5">
+        <div class="as flex flex-col items-center justify-center ml-20 mr-20">
           <div
             class="
               rounded-full
@@ -182,7 +176,7 @@
         </div>
       </div>
 
-      <div class="flex items-center">
+      <div class="flex items-center flex-row-reverse">
           <iframe
             height="350"
             width="600"

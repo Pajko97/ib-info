@@ -6,7 +6,6 @@
         <ul class="flex justify-center pb-5">
             <li class="pr-8 text-black text-2xl"><NuxtLink to="/products">Products</NuxtLink></li>
             <li class="pr-8 text-black text-2xl"><NuxtLink to="/compatibility">Compatibility list</NuxtLink></li>
-            <li class="pr-8 text-black text-2xl"><NuxtLink to="/company">Company portal</NuxtLink></li>
             <li class="pr-8 text-black font-normal text-2xl"><NuxtLink to="/about">About us</NuxtLink></li>
             <li class="pr-8 text-black text-2xl"><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>

@@ -2,6 +2,9 @@
 <template>
   <div>
     <NavbarBlack/>
+    <h1 class="mx-40 my-15 text-4xl text-left">Contact us</h1>
+    <ContactForm/>
+    <Footer/>
   </div>
 </template>
 

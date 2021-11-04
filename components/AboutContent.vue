@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center pt-20 pb-20 mx-40 items-start">
+  <div class="flex flex-col justify-center my-10 mx-40 items-start">
            <div class="flex flex-col justify-center pt-10 pb-10">
                 <h1 class="text-left pb-20 text-4xl">About us</h1>
                 <p class="text-lg">

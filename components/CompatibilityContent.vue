@@ -1,8 +1,9 @@
 <template>
-    <div class="flex flex-col justify-center pt-20 pb-20 items-center">
+    <div class="flex flex-col justify-center mx-40 my-20 items-center">
       <h1 class="text-left pb-20 text-4xl">List of compatible devices</h1>
-      <div class="flex flex-row">
-          <div class="flex flex-col">
+      <div class="flex flex-col justify-between items-center">
+          <div class="flex flex-row">
+              <div class="flex flex-col pb-10 pr-10">
               <h1 class="text-2xl font-bold">Apple</h1>
               <div class="flex flex-col">
                   <p class="text-lg">All phones since 2017 including:</p>
@@ -14,7 +15,7 @@
               </div>
           </div>
 
-          <div class="flex flex-col">
+              <div class="flex flex-col pb-10 pr-10">
               <h1 class="text-2xl font-bold">Google</h1>
               <div class="flex flex-col">
                   <p class="text-lg">All phones since 2015 including:</p>
@@ -23,6 +24,51 @@
                   
               </div>
           </div>
+
+              <div class="flex flex-col pb-10 pr-10">
+              <h1 class="text-2xl font-bold">LG</h1>
+              <div class="flex flex-col">
+                  <p class="text-lg">All phones since 2014 including:</p>
+                  <p class="text-lg">Q Series</p>
+                  <p class="text-lg">G Series</p>
+                  <p class="text-lg">V Series</p>
+              </div>
+          </div>
+          </div>
+
+                    <div class="flex flex-row">
+              <div class="flex flex-col pb-10 pr-10">
+              <h1 class="text-2xl font-bold">LG</h1>
+              <div class="flex flex-col">
+                  <p class="text-lg">All phones since 2014 including:</p>
+                  <p class="text-lg">Q Series</p>
+                  <p class="text-lg">G Series</p>
+                  <p class="text-lg">V Series</p>
+              </div>
+          </div>
+
+              <div class="flex flex-col pb-10 pr-10">
+              <h1 class="text-2xl font-bold">Samsung</h1>
+              <div class="flex flex-col">
+                  <p class="text-lg">All phones since 2014 including:</p>
+                  <p class="text-lg">S Series</p>
+                  <p class="text-lg">A Series</p>
+              </div>
+          </div>
+
+              <div class="flex flex-col pb-10 pr-10">
+              <h1 class="text-2xl font-bold">Huawei</h1>
+              <div class="flex flex-col">
+                  <p class="text-lg">All phones since 2016 including:</p>
+                  <p class="text-lg">P Series</p>
+              </div>
+          </div>
+                    </div>
+
+          
+
+            
+
       </div>
     </div>
 </template>
