@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-20 my-20 flex flex-col justify-center items-center">
+  <div class="mx-20 my-14 flex flex-col justify-center items-center">
    <!-- This shows a success message if the form was submitted correctly. -->
     <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
       Great! Your message has been sent successfully. I will try to respond
@@ -7,8 +7,9 @@
     </div>
     <form
       v-else
-      v-on:submit.prevent="sendMessage"
-      class="w-96 flex flex-col"
+      
+      @:submit.prevent="sendMessage"
+      class="w-96 px-14 flex flex-col"
     >
       <!-- Here an error is displayed if something goes wrong -->
       <div v-if="errored" class="rounded bg-red-200 text-lg p-4">
@@ -92,35 +93,9 @@ export default {
       email: "",
       phone: "",
       message: "",
-    };
-  },
-  methods: { 
-  sendMessage() {
-    // This works here.
-    this.loading = true;
-    // The view model.
-    this.$axios
-        .post("https://api.contact.com/messages", {
-          name: this.name,
-          email: this.email,
-          phone: this.phone,
-          message: this.message,
-        }).then(response => {
-            console.log(response)
-          this.success = true
-          this.errored =false
-        })
-        .catch(error => {
-            console.log(error)
-          this.errored = true
-        })
-        .finally(() => {
-          this.loading = false
-        });
-
-    
+    }
   }
-}}
+}
 
 </script>
 
@@ -135,3 +110,4 @@ export default {
     background-color: #231F20;
 }
 </style>
+

@@ -1,41 +1,68 @@
 <template>
-    <div class="flex h-screen bg-black flex-col justify-center pt-20 pb-20 items-center">
-        <img src="../static/images/logo.svg"/>
-     <h1 class="text-6xl text-white">I-Business card </h1>
-     <h2 class="text-6xl text-white">Welcome to the new way of networking.</h2>
-    </div>
+  <div id="loading-wrapper">
+  <div id="loading-text">LOADING</div>
+  <div id="loading-content"></div>
+</div>
 </template>
 
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
 
-.theme-color-1 {
-    background-color: #231F20;
-}
-h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
+<style>
+  #loading-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
-}
+  #loading-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(20, 121, 60);
+    width: 100px;
+    height: 30px;
+    margin: -7px 0 0 -45px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+  }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
+  #loading-content {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 170px;
+    height: 170px;
+    margin: -85px 0 0 -85px;
+    border: 3px solid #F00;
+  }
 
-* {
-    font-family: 'Nunito Sans';
-}
+  #loading-content {
+    border: 3px solid transparent;
+    border-top-color: rgb(121, 61, 185);
+    border-bottom-color: rgb(121, 61, 185);
+    border-radius: 50%;
+    -webkit-animation: loader 2s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+    -o-animation: loader 2s linear infinite;
+    animation: loader 2s linear infinite;
+  }
+
+  @keyframes loader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 </style>

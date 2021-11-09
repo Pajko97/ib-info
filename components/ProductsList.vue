@@ -1,78 +1,88 @@
 <template>
   <div class="flex flex-col justify-center pt-20 pb-20 items-center">
-    <h1 class="text-4xl text-left pb-20">C4L Digital Business Products</h1>
+    <h1 class="lg:text-4xl text-2xl text-left pb-20">{{ $t('products_headline')}}</h1>
 
-    <div class="flex flex-row justify-evenly items-center ml-40 mr-40 ">
-      <div class="flex flex-col justify-center items-center">
-        <img src="../static/images/card_1.png" />
-        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Premium metal</h3>
+    <div class="flex lg:flex-row flex-col justify-evenly items-center ml-14 mr-14 lg:ml-40 lg:mr-40 ">
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+        <img  src="../static/images/card_1.png" />
+        <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('products_h1_1')}}</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10">
-          Our most exclusive product - premium, innovative, bespoke.
+          {{ $t('products_p_1')}}
         </p>
+  
        <button
           class="
             pr-9
             pl-9
-            pt-6
-            pb-6
+            lg:pt-6
+            lg:pt-6
+            pt-3
+            pb-3
             btn
             rounded-full
-            text-xl
+            lg:text-xl
+            text-lg
             theme-color-1
             text-white
           "
         >
-          FIND OUT MORE
+          {{ $t('products_button')}}
         </button>
-        <p class="text-xl font-bold pt-10">FROM 889,00 KN</p>
+        <p class="text-xl font-bold pt-10">{{ $t('products_price_1')}}</p>
       </div>
 
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
         <img src="../static/images/card_2.png" />
-        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">Bamboo</h3>
-        <p class="text-lg pb-5 text-center pl-10 pr-10">
-          Eco Friendly. With every card sold we plant a tree around the world.
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_2')}}</h3>
+        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
+          {{ $t('products_p_2')}}
         </p>
-        <button
+         <button
           class="
             pr-9
             pl-9
-            pt-6
-            pb-6
+            lg:pt-6
+            lg:pt-6
+            pt-3
+            pb-3
             btn
             rounded-full
-            text-xl
+            lg:text-xl
+            text-lg
             theme-color-1
             text-white
           "
         >
-          FIND OUT MORE
+          {{ $t('products_button')}}
         </button>
-        <p class="text-xl font-bold pt-10">FROM 889,00 KN</p>
+        <p class="text-xl font-bold pt-10">{{ $t('products_price_2')}}</p>
       </div>
 
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
         <img src="../static/images/card_3.png" />
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">PVC Plastic</h3>
-        <p class="text-lg pb-5 text-center pl-10 pr-10">
+        <p class="text-lg pb-5 text-center pl-0 pr-0 lg:pl-10 lg:pr-10">
           Our most budget friendly card for contactless networking.
         </p>
-        <button
+            <button
           class="
             pr-9
             pl-9
-            pt-6
-            pb-6
+            lg:pt-6
+            lg:pt-6
+            pt-3
+            pb-3
             btn
             rounded-full
-            text-xl
+            lg:text-xl
+            text-lg
             theme-color-1
             text-white
           "
         >
-          FIND OUT MORE
+          {{ $t('products_button')}}
         </button>
-        <p class="text-xl font-bold pt-10">FROM 256,00 KN</p>
+        <p class="text-xl font-bold pt-10">{{ $t('products_price_3')}}</p>
       </div>
     </div>
   </div>

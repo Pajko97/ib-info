@@ -1,29 +1,31 @@
 <template>
-    <div class="theme-color-1 flex flex-row justify-around pt-10 pb-10 pl-40 pr-10">
-       <img src="../static/images/logo_footer.png">
-       <div class="flex flex-col text-lg text-white pt-5 pr-10">
-           <a class="pb-8">PRODUCTS</a>
-           <a class="pb-8">COMPATIBILITY LIST</a>
-           <a class="pb-8">HAPPY CUSTOMERS</a>
-           <a class="pb-8">LOGIN</a>
+    <div class="theme-color-1 flex flex-col lg:flex-row justify-around pt-10 pl-10 pb-10 lg:pl-20 pr-10">
+       <div class="flex flex-col justify-center items-center">
+            <p class="px-10 mx-10 lg:px-0 text-white lg:mb-0 mb-5 text-6xl text-center" >i-b cards</p>
+            <p class="px-10 mx-10 lg:px-0 text-white lg:mb-0 mb-5 text-2xl text-center" >CARD4LIFE</p>
+       </div>
+       <div class="flex flex-col text-base lg:text-lg text-white lg:pt-5 pt-0">
+           <a class="lg:pb-8">{{ $t('footer_products') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_compatibility') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_happy') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_login') }}</a>
        </div>
 
-        <div class="flex flex-col text-lg text-white pt-5 pr-10">
-           <a class="pb-8">FAQ</a>
-           <a class="pb-8">CONTACT</a>
-           <a class="pb-8">AFFILIATE PROGRAM</a>
-           <a class="pb-8">ORDER TRACKER</a>
+        <div class="flex flex-col text-base lg:text-lg text-white lg:pt-5 pt-0">
+           <a class="lg:pb-8">{{ $t('footer_faq') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_contact') }}</a>
+          <!--  <a class="lg:pb-8">{{ $t('footer_affiliate_program') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_order_tracker') }}</a> -->
        </div>
 
-        <div class="flex flex-col items-start text-lg text-white pt-5 pr-10">
-           <a class="pb-8">REFUND AND SHIPPING POLICY</a>
-           <a class="pb-8">PRIVACY POLICY</a>
-           <div class="flex flex-row items-center justify-center">
-               <img class="pr-2" src="../static/images/facebook_icon.png" />
-               <img class="pr-2" src="../static/images/twitter_icon.png" />
-               <img class="pr-2" src="../static/images/instagram_icon.png" />
-               <img class="pr-2" src="../static/images/ln_icon.png" />
-
+        <div class="flex flex-col items-start text-base lg:text-lg text-white lg:pt-5 pt-0">
+           <a class="lg:pb-8">{{ $t('footer_refund_and_shipping') }}</a>
+           <a class="lg:pb-8">{{ $t('footer_privacy') }}</a>
+           <div class="flex flex-row items-center mt-5 justify-center">
+               <img alt="Facebook icon" class="pr-2" src="../static/images/facebook_icon.png" />
+               <img alt="Twitter icon" class="pr-2" src="../static/images/twitter_icon.png" />
+               <img alt="Instagram icon" class="pr-2" src="../static/images/instagram_icon.png" />
+               <img alt="Linkedin icon" class="pr-2" src="../static/images/ln_icon.png" />
            </div>
        </div>
 

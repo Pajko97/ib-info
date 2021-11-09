@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center my-10 mx-40 items-start">
+  <div class="flex flex-col justify-center lg:my-10 lg:mx-40 mx-14 my-8 items-start">
            <div class="flex flex-col justify-center pt-10 pb-10">
                 <h1 class="text-left pb-20 text-4xl">About us</h1>
                 <p class="text-lg">
@@ -7,28 +7,28 @@
                 </p>
            </div>
 
-           <div class="flex flex-col p-5 justify-center">
+           <div class="lg:mb-0 mb-3 flex flex-col justify-center">
                 <h1 class="text-left pb-20 text-4xl">Our team</h1>
                 <div class="flex flex-col items-evenly justify-evenly">
-                   <div class="flex-row flex mb-5">
+                   <div class="flex lg:flex-row md:flex-row flex-col mb-5">
                         <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                         <p class="text-2xl font-bold">Marko Aleksic</p>
+                          <p class="text-xl font-normal">CEO</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
- <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+ <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                         <p class="text-2xl font-bold">Bojan Juric</p>
+                          <p class="text-xl font-normal">Digital Marketing</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
-                         <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                         <p class="text-2xl font-bold">Bojan Peric</p>
+                          <p class="text-xl font-normal">Developer</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
         
@@ -37,25 +37,25 @@
                 
                    </div>
 
-               <div class="flex-row flex">
-                         <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+               <div class="flex-col md:flex-row lg:flex-row flex">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
                          <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                          <p class="text-xl font-normal">Development lead</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
-                         <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                         <p class="text-2xl font-bold">Pavle Janjusevic</p>
+                          <p class="text-xl font-normal">Developer/2</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
-                         <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-2xl font-normal">Development lead</p>
+                         <p class="text-2xl font-bold">Sandro Hamzic</p>
+                          <p class="text-xl font-normal">Sales/Marketing</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 

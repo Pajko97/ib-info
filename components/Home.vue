@@ -1,23 +1,33 @@
 <template>
   <div>
-    <div class="section-1 h-screen flex flex-col items-center justify-center">
-      <div class="flex flex-col items-center justify-center">
+    <div class="section-1 relative h-screen flex flex-col  overflow-hidden lg:items-center lg:justify-center">
+      <div class="flex-flex-col absolute top-0 right-0 z-50 lg:mr-5 lg:mt-5 items-center text-center justify-center">
+            <p class="text-base text-white pb-2">{{ $t('nav_language')}}</p>
+            <div class="flex flex-row">
+              <nuxt-link class="theme-color-1 text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')">English</nuxt-link>
+              <nuxt-link class="theme-color-1 text-white text-sm px-2 py-2" :to="switchLocalePath('hr')">Hrvatski</nuxt-link>
+            </div>
+          </div>
+      <div class="w-screen h-screen absolute bg-over z-10"></div>
+      <div class="flex flex-col z-20 items-center justify-centers">
         <Navbar />
         <div class="flex flex-col justify-space-around">
           <h1
-            class="text-center text-white text-6xl pr-5 pl-5 mt-20"
+            class="text-center text-white lg:text-6xl text-3xl pr-5 pl-5 mt-32"
           >
-            UNLEASH POWER OF NETWORKING
+            {{ $t('home_h1') }}
           </h1>
-          <p class="text-white text-5xl my-5 text-center ml-48 mr-48">
-            Share information with just a tap
+          <p class="text-white lg:text-5xl text-xl my-5 text-center lg:ml-48 lg:mr-48">
+            {{ $t('home_h2')}}
           </p>
         </div>
         <div class="flex flex-row my-10">
+         <NuxtLink to="/products">
           <button
             class="
               btn
-              text-black text-3xl
+              text-black lg:text-3xl
+              text-2xl
               bg-white
               rounded-full
               pl-10
@@ -26,61 +36,89 @@
               pr-10
             "
           >
-            See Products
-          </button>
+            {{ $t('section_4_button') }}
+          </button></NuxtLink>
         </div>
         <div class="flex justify-center items-center mb-20">
-          <p class="text-white text-2xl">No apps needed</p>
+          <p class="text-white text-2xl">{{ $t('home_app_not_needed') }}</p>
         </div>
       </div>
-      <div class="overlay"></div>
+<!--             <div class="overlay overflow-hidden z-40 w-screen h-screen relative"></div>
+ -->
+      <video
+        autoplay
+        loop
+        muted
+        class="lg:bg-blend-darken absolute z-0 w-auto min-w-full min-h-full max-w-none"
+      >
+        <source
+          src="../static/videos/landing_bg_video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <div class="section-2 flex flex-row bg-white">
-      <div class="flex flex-col items-start pt-20 pl-20 pb-20">
-        <h1 class="text-8xl">CARD4LIFE</h1>
-        <h1 class="text-5xl text-gray-400">I - BUSINESS CARD</h1>
-        <h3 class="text-4xl font-bold pt-5 pb-5 text-gray-400">
-          Instantly transfer any information.
+    <div class="section-2 flex flex-col p-5 lg:flex-row bg-white">
+      <div class="mr-20 mb-5 flex flex-col items-start lg:pt-20 lg:pl-20 lg:pb-20">
+        <h1 class="lg:text-5xl text-gray-400">{{ $t('home_section_2_h1') }}</h1>
+        <h3 class="lg:text-4xl text-xl font-bold lg:pt-5 lg:pb-5 text-gray-400">
+          {{ $t('home_section_2_h3') }}
         </h3>
-        <p class="text-3xl">
-          Using NFC technology, the I-B card can share all of your information
-          when tapped against a smartphone. No more messing around with old
-          paper business cards, put all the information right where people spend
-          most of their time - their phone!
+          <h4 class="lg:text-3xl text-xl font-bold lg:pt-5 lg:pb-5 text-black">{{ $t('home_section_2_h4')}}</h4>
+
+        <p class="lg:text-3xl">
+         {{ $t('home_section_2_description')}}
         </p>
         <button
           class="
-            text-white text-2xl
+            text-white lg:text-2xl
             btn
             theme-color-1
-            pt-5
-            pb-5
-            pl-7
-            pr-7
+            pt-2
+            pb-2
+            px-4
             mt-5
-            mb-5
+            md:pt-5
+            md:pb-5
+            md:pl-7
+            md:pr-7
+            md:mt-5
+            md:mb-5
           "
         >
-          SEE ALL PRODUCTS
+          {{ $t('home_section_2_button')}}
         </button>
       </div>
-     <img src="../static/images/video_2.png"/>
-    </div>
+      <div class="flex flex-col justify-center items-center">
+            <video
+              controls
+              loop
+              muted
+              class="w-full h-full"
+            >
+        <source
+          src="../static/videos/landing_bg_video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>  
+      </div>
+ </div>
 
-    <div class="section-3 flex flex-row justify-evenly items-center">
-      <p class="text-2xl text-gray-600 font-bold ml-20 mr-20">
-        Join the 100+ companies using I-B CARD.
+    <div class="section-3 flex flex-col md:flex-row justify-evenly items-center">
+      <p class="lg:text-2xl text-lg text-gray-600 text-center mr-3 ml-3 mt-3 font-bold lg:ml-20 lg:mr-20">
+        {{ $t('home_section_3_text')}}
       </p>
       <img src="../static/images/companies_2.png"/>
     </div>
 
     <div
-      class="section-4 pl-40 flex flex-col h-screen justify-center items-start"
+      class="section-4 lg:pl-40 flex pr-3 pl-3 flex-col h-screen justify-center items-center lg:items-start"
     >
-      <p class="text-4xl text-white font-semibold">Choose your</p>
-      <p class="text-4xl text-white font-semibold">Premium</p>
-      <p class="text-4xl text-white font-semibold">CARD4LIFE</p>
+      <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_1')}}</p>
+      <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_2')}}</p>
+      <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_3')}}</p>
       <button
         class="
           btn
@@ -89,31 +127,29 @@
           pl-5
           pr-5
           mt-3
-          -ml-3
+          lg:-ml-3
           bg-transparent
           text-3xl text-white
           border-2 border-white
           rounded-full
         "
       >
-        See products
+        {{ $t('home_button') }}
       </button>
     </div>
     <div
-      class="section-5 flex flex-col items-center justify-center mr-20 ml-20"
+      class="section-5 flex flex-col items-center justify-center lg:mr-20 lg:ml-20"
     >
-      <h1 class="text-5xl pb-3 mt-20 mb-20 flex-col font-semibold">
-        Go contactless in three simple steps!
-        <div class="flex flex-row">
-          <hr class="bg-black solid w-full" />
-        </div>
+      <h1 class="lg:text-5xl text-center text-2xl lg:my-5 mx-14 my-5 pb-3 lg:mt-20 lg:mb-20 flex-col font-semibold">
+        {{ $t('section_5_h1')}}
       </h1>
-      <div class="flex flex-row justify-center mt-20 mb-20 items-space-around">
-        <div class="as flex flex-col items-center justify-center ml-5 mr-5">
+      <div class="flex flex-col lg:flex-row justify-center lg:mt-20 lg:mb-20 my-10 items-space-around">
+        <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
-              text-6xl text-white
+              text-2xl
+              lg:text-6xl text-white
               bg-black
               pt-1.5
               pb-1.5
@@ -124,18 +160,16 @@
           >
             1
           </div>
-          <h1 class="text-4xl text-center mr-5 ml-5">Purchase your card</h1>
-          <p class="text-gray-600 text-xl text-center">
-            After placing your order, you will receive instructions on how to
-            provide us with your logo or design for on the card.
-          </p>
+          <h1 class="lg:text-4xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
+          <p class="text-gray-600 text-xl text-center">{{ $t('section_5_p_1')}}</p>
         </div>
 
-        <div class="as flex flex-col items-center justify-center ml-5 mr-5">
+        <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
-              text-6xl text-white
+              text-2xl
+              lg:text-6xl text-white
               bg-black
               pt-1.5
               pb-1.5
@@ -146,18 +180,19 @@
           >
             2
           </div>
-          <h1 class="text-4xl text-center">Create your profile</h1>
+          <h1 class="lg:text-4xl text-2xl text-center">{{ $t('section_5_h1_3')}}</h1>
           <p class="text-gray-600 text-xl text-center">
-            Here you can add, edit & enable what you would like to share with
-            your contactless card.
+            {{ $t('section_5_p_2')}}
           </p>
         </div>
 
-        <div class="as flex flex-col items-center justify-center ml-20 mr-20">
+        <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
-              text-6xl text-white
+              lg:text-6xl
+              text-2xl
+              text-white
               bg-black
               pt-1.5
               pb-1.5
@@ -168,155 +203,69 @@
           >
             3
           </div>
-          <h1 class="text-4xl text-center">Tap, Share & Go</h1>
+          <h1 class="lg:text-4xl text-2xl text-center">{{ $t('section_5_h1_4')}}</h1>
           <p class="text-gray-600 text-xl text-center">
-            It's that simple! Share who you are and what you do with with one
-            quick tap.
+            {{ $t('section_5_p_3')}}
           </p>
         </div>
       </div>
 
-      <div class="flex items-center flex-row-reverse">
-          <iframe
-            height="350"
-            width="600"
-            className="absolute top-0 left-0 w-full"
-            src="https://www.youtube.com/embed/zihoyz0u_cs"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        <img class="mr-14 ml-14" src="../static/images/pointer.png" />
-        <h1 class="text-5xl text-grey-600">
-          How to SET UP and use card in 4 easy steps!
+      <div class="flex items-center lg:flex-row-reverse flex-col flex-col-reverse">
+    <video
+        loop
+        controls
+        muted
+        class="w-full h-full px-5 lg:px-0"
+      >
+        <source
+          src="../static/videos/landing_bg_video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>  
+        <img class="py-5 lg:py-0 mr-14 ml-14 origin-center transform rotate-90 w-10" src="../static/images/pointer.png" />
+        <h1 class="lg:text-5xl text-grey-600">
+          {{ $t('section_5_h1_5')}}
         </h1>
       </div>
     </div>
 
     <div
-      class="section-6 flex flex-col items-center justify-center mr-20 ml-20"
+      class="section-6 flex flex-col items-center justify-center lg:mr-20 lg:ml-20"
     >
-      <h1 class="text-6xl mt-20 mb-20">
-        <span class="pt-5 mt-5 underline">See how our customer</span> are using the i-b
-        cards.
+      <h1 class="lg:text-6xl text-2xl text-center px-5 py-10 lg:mt-20 lg:mb-20">
+        {{ $t('section_6_h1')}}
       </h1>
-      <div class="flex flex-row">
-        <div class="flex flex-col justify-start items-center mx-14">
-          <img src="../static/images/iphone_mockup.png" />
-          <h3 class="text-2xl font-semibold text-center py-5">Digital business card</h3>
+      <div class="flex lg:flex-row flex-col">
+        <div class="flex flex-col justify-start items-center mx-14 my-5">
+          <img src="../static/images/screen_1.png" />
+          <h3 class="text-2xl font-semibold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_1')}}</h3>
           <p class="text-base text-center">
-            Sharing their contact details, addresses, websites & emails easily.
+            {{ $t('section_6_p_1')}}
           </p>
         </div>
-        <div class="flex flex-col justify-start items-center mx-14">
-          <img  src="../static/images/iphone_mockup.png" />
-          <h3 class="text-2xl font-bold text-center py-5">Profile hub</h3>
+        <div class="flex flex-col justify-start items-center mx-14 my-5">
+          <img  src="../static/images/screen_2.png" />
+          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_2')}}</h3>
           <p class="text-base text-center">
-            Sharing everything about who you are and what you do.
-          </p>
-        </div>
-
-       <div class="flex flex-col justify-start items-center mx-14">
-          <img src="../static/images/iphone_mockup.png" />
-          <h3 class="text-2xl font-bold text-center py-5">Lead tool</h3>
-          <p class="text-base text-center">
-              More leads and appointments there and then.
+            {{ $t('section_6_p_2')}}
           </p>
         </div>
 
-        <div class="flex flex-col justify-start items-center mx-14">
-          <img src="../static/images/iphone_mockup.png" />
-          <h3 class="text-2xl font-bold text-center py-5">Link to any URL</h3>
+       <div class="flex flex-col justify-start items-center mx-14 my-5">
+          <img src="../static/images/screen_3.png" />
+          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_3')}}</h3>
           <p class="text-base text-center">
-            Linking to any digital presence.
-            Apps, Videos, E-menus & PDFs.
+            {{ $t('section_6_p_3')}}
           </p>
         </div>
-      </div>
-    </div>
 
-    <div
-      class="
-        section-7
-        flex flex-row
-        items-center
-        justify-center
-        mr-20
-        ml-20
-        mt-20
-        mb-20
-      "
-    >
-      <div class="ml-5 mr-5 flex flex-col items-center justify-evenly">
-        <div class="flex flex-row items-space-around mb-5">
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-        </div>
-        <p class="text-2xl font-bold text-center">
-          "Love this card, everyone I show this to is amazed by how innovative it is!"
-        </p>
-           <div class="flex flex-row justify-center items-center">
-            <img
-              class="rounded-full max-w-xs max-h-12 mr-5"
-              src="../static/images/review_image.png"
-            />
-         
-          <div class="flex flex-col">
-            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
-            <p class="text-gray-600">Verified customer</p>
-          </div>
-        </div>
-       
-      </div>
-
-    <div class="ml-5 mr-5 flex flex-col items-center justify-center">
-        <div class="flex flex-row items-space-around mb-5">
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-        </div>
-        <p class="text-2xl font-bold text-center">
-          "Love the physical product."
-        </p>
-        <div class="flex flex-row justify-center items-center">
-            <img
-              class="rounded-full max-w-xs max-h-12 mr-5"
-              src="../static/images/review_image.png"
-            />
-         
-          <div class="flex flex-col">
-            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
-            <p class="text-gray-600">Verified customer</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ml-5 mr-5 flex flex-col items-center justify-center">
-        <div class="flex flex-row items-space-around mb-5">
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-          <img class="pl-1 pr-1" src="../static/images/star.png" />
-        </div>
-        <p class="text-2xl font-bold text-center">
-          "I love these cards, and i love Sandro Hamzic because he has such a
-          big dick."
-        </p>
-        <div class="flex flex-row justify-center items-center">
-            <img
-              class="rounded-full max-w-xs max-h-12 mr-5"
-              src="../static/images/review_image.png"
-            />
-         
-          <div class="flex flex-col">
-            <p class="text-2xl pt-5">Jihene Ben Abderjazavac</p>
-            <p class="text-gray-600">Verified customer</p>
-          </div>
+        <div class="flex flex-col justify-start items-center mx-14 my-5">
+          <img src="../static/images/screen_4.png" />
+          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_4')}}</h3>
+          <p class="text-base text-center">
+            {{ $t('section_6_p_4')}}
+            </p>
         </div>
       </div>
     </div>
@@ -327,8 +276,17 @@
   </div>
 </template>
 <script lang="ts">
-require('nuxt-video-player/src/assets/css/main.css')
 
+export default {
+  head () {
+    return {
+      title: 'Home',
+      meta: [
+        { hid: 'description', name: 'i-b cards', content: 'About our company Nuxt.js ' }
+      ]
+    }
+  }
+}
 
 </script>
 
@@ -361,10 +319,34 @@ require('nuxt-video-player/src/assets/css/main.css')
   background-color: #231f20;
 }
 
+.bg-over {
+  background-color: rgba(52,52,52,0.5);
+}
+
 .video_1 {
   width: 500px!important;
 }
 
+.z-ind-middle {
+  z-index : 30;
+}
+.z-ind {
+  z-index: 999!important;
+}
+
+.overlay {
+   position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}
 hr.solid {
   
   border-top: 3px solid #000000;

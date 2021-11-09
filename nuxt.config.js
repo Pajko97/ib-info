@@ -1,6 +1,13 @@
+import i18n from './config/i18n'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'white'
+  },
   generate: {
     fallback: true
   },
@@ -35,7 +42,24 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
+  buildModules: [[
+    'nuxt-i18n',
+    {
+      vueI18nLoader: true,
+      defaultLocale: 'hr',
+       locales: [
+        {
+           code: 'en',
+           name: 'English'
+        },
+        {
+           code: 'hr',
+           name: 'Hrvatski'
+        }
+      ],
+      vueI18n: i18n
+    }
+   ],
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
@@ -49,26 +73,16 @@ export default {
   ],
 
   i18n: {
-    locales: ['en', 'hr', 'es'],
+    locale : [
+      { code: 'hr', iso: 'en-US', file: './locales/hr.json', dir: 'ltr' },
+    ],
+    
     defaultLocale: 'en',
-    vuex: true,
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          welcome: 'Welcome'
-        },
-        hr: {
-          welcome: 'Dobrodosli'
-        },
-        es: {
-          welcome: 'Bienvenido'
-        }
-      }
-    }
+    vueI18n: i18n
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   }
 }

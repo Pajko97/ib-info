@@ -4,9 +4,9 @@
 
 <template>
     <div class="section-8 theme-color-2 pb-14 flex flex-col justify-center items-center">
-            <h1 class="text-4xl pt-20 text-center pb-10">Have an idea how we can improve our services?</h1>
-            <p class="text-2xl pb-10 text-center text-gray-400 font-light">Send your ideas to us and if we implement it, you will recieve cards for free!</p>
-            <button class="btn text-center theme-color-1 text-2xl text-white font-semibold pl-6 pr-6 pt-3 pb-3">GIVE US A HINT</button>
+            <h1 class="lg:text-4xl mx-14 text-xl lg:pt-20 pt-10 text-center pb-10">{{ $t('hint_h1') }}</h1>
+            <p class="lg:text-2xl mx-14 pb-10 text-center text-gray-400 font-light">{{ $t('hint_p') }}</p>
+            <button class="btn text-center theme-color-1 lg:text-2xl text-xl text-white font-semibold pl-6 pr-6 pt-3 pb-3">{{ $t('hint_button') }}</button>
         </div>
 </template>
 
