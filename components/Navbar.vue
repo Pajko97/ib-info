@@ -1,7 +1,7 @@
 
 
 <template>
-  <div :class="this.menu_open ? 'pt-0 overlay' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
+  <div :class="this.menu_open ? 'pt-0 overlay z-50' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
 
     <img v-if="!this.menu_open" src="../static/images/logo_new_white.png"/>
     <nav :class="this.menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
@@ -15,14 +15,10 @@
         <!-- primary nav -->
         <div class="hidden md:flex items-center space-x-1">
           <nuxt-link :to="localePath('products')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
-                   <nuxt-link :to="localePath('compatibility')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
+          <nuxt-link :to="localePath('compatibility')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
+          <nuxt-link :to="localePath('giftbox')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">Gift box</p></nuxt-link>
           <nuxt-link :to="localePath('about')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
           <nuxt-link :to="localePath('contact')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
-        
-
-          
-
-
         </div>
       </div>
 
@@ -43,11 +39,17 @@
   </div>
 
   <!-- mobile menu -->
-  <div class="mobile-menu fixed bg-black -z-10" :class="this.menu_open ? 'visible' : 'invisible'">
-        <NuxtLink to="/products"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Products</p></NuxtLink>
-        <NuxtLink to="/compatibility"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Compatibility list</p></NuxtLink>
-        <NuxtLink to="/about"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">About us</p></NuxtLink>
-        <NuxtLink to="/contact"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Contact</p></NuxtLink>
+  <div class="mobile-menu fixed bg-black" :class="this.menu_open ? 'visible z-50' : 'invisible'">
+      <nuxt-link :to="localePath('products')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
+          <nuxt-link :to="localePath('compatibility')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
+          <nuxt-link :to="localePath('giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Gift box</p></nuxt-link>
+          <nuxt-link :to="localePath('about')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
+          <nuxt-link :to="localePath('contact')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
+
+        <div class="mt-10 flex flex-row items-center justify-center">
+              <nuxt-link class="theme-color-1 text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')"><img width="40" height="40"  src="../static/images/flag_uk.png"/></nuxt-link>
+              <nuxt-link class="theme-color-1 text-white text-sm px-2 py-2" :to="switchLocalePath('hr')"><img width="40"  height="40"  src="../static/images/croatia_flag.png"/></nuxt-link>
+            </div>
   </div>
 </nav>
   </div>
@@ -112,6 +114,5 @@ export default {
     left: 0;
     top: 0;
     background: rgba(51,51,51,0.7);
-    z-index: 10;
 }
 </style>

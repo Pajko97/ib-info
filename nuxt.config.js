@@ -8,6 +8,9 @@ export default {
     color: '#3B8070',
     background: 'white'
   },
+  render : {
+    fallback : false
+  },
   generate: {
     fallback: true
   },
@@ -21,7 +24,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -31,6 +33,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/static/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -77,7 +80,7 @@ export default {
       { code: 'hr', iso: 'en-US', file: './locales/hr.json', dir: 'ltr' },
     ],
     
-    defaultLocale: 'en',
+    defaultLocale: 'hr',
     vueI18n: i18n
   },
 

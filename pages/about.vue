@@ -8,7 +8,19 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 
-export default Vue.extend({})
+export default {
+  head() {
+      return {
+        title: 'About',
+        meta: [
+          {
+            hid: 'description__about',
+            name: 'description',
+            content: 'Saznajte sve o nama i kako su nastale digitalne biznis kartice sa NFC tehnologijom.'
+          }
+        ]
+      }
+    }
+}
 </script>

@@ -43,7 +43,7 @@
         </div>
       </div>
       <div>
-        <label for="phone" class="sr-only">Phone</label>
+        <label for="phone" class="sr-only">Phone*</label>
         <div class="relative rounded-md shadow-sm">
           <input
             v-model="phone"

@@ -12,11 +12,12 @@
 
         <!-- primary nav -->
         <div class="hidden md:flex items-center space-x-1">
-            <NuxtLink to="/"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">Home</p></NuxtLink>
-            <NuxtLink to="/products"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">Products</p></NuxtLink>
-            <NuxtLink to="/compatibility"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">Compatibility list</p></NuxtLink>
-            <NuxtLink to="/about"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">About us</p></NuxtLink>
-            <NuxtLink to="/contact"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">Contact</p></NuxtLink>
+            <nuxt-link :to="localePath('/')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_home') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('products')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('giftbox')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_gift') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('compatibility')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('about')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('contact')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
 
         </div>
       </div>
@@ -39,11 +40,19 @@
 
   <!-- mobile menu -->
   <div class="mobile-menu w-screen bg-black md:hidden" :class="this.menu_open ? '' : 'hidden'">
-        <NuxtLink to="/"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Home</p></NuxtLink>
-        <NuxtLink to="/products"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Products</p></NuxtLink>
-        <NuxtLink to="/compatibility"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Compatibility list</p></NuxtLink>
-        <NuxtLink to="/about"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">About us</p></NuxtLink>
-        <NuxtLink to="/contact"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Contact</p></NuxtLink>
+    
+            <nuxt-link :to="localePath('/')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_home ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('products')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_gift ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('compatibility')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_compatibility ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('about')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_about ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('contact')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_contact ')}}</p></nuxt-link>
+
+
+            <div class="mt-10 flex flex-row items-center justify-center">
+              <nuxt-link class="theme-color-1 text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')"><img width="40" height="40"  src="../static/images/flag_uk.png"/></nuxt-link>
+              <nuxt-link class="theme-color-1 text-white text-sm px-2 py-2" :to="switchLocalePath('hr')"><img width="40"  height="40"  src="../static/images/croatia_flag.png"/></nuxt-link>
+            </div>
   </div>
 </nav>
   </div>
@@ -93,8 +102,6 @@ export default {
 }
 .overlay {
     position: fixed;
-    width: 100%;
-    height: 100%;
     left: 0;
     top: 0;
     background: rgba(51,51,51,0.7);

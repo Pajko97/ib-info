@@ -2,66 +2,71 @@
   <div class="flex flex-col justify-center lg:my-10 lg:mx-40 mx-14 my-8 items-start">
            <div class="flex flex-col justify-center pt-10 pb-10">
                 <h1 class="text-left pb-20 text-4xl">About us</h1>
-                <p class="text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, doloremque? Facere architecto debitis dolor laboriosam alias, est eum iste voluptates iure consectetur ratione tempora ut enim et hic officia officiis consequuntur minus itaque quaerat repellendus, in aut. Eius cumque voluptas minus vel atque soluta amet, ad perferendis inventore obcaecati natus praesentium tenetur quia, saepe odio a. Quas sapiente vero laboriosam, repellat natus cum! Laborum, inventore! Ullam temporibus, quod aliquid itaque ratione quidem veritatis optio reprehenderit accusantium. Omnis, minima! Itaque, sapiente magnam. Pariatur qui quae, architecto, totam veniam minima saepe vero nesciunt delectus omnis ut reiciendis non laborum aut quibusdam placeat, expedita tempora reprehenderit? Vel, dicta, repellat id magni quod temporibus sequi nulla exercitationem ab laboriosam distinctio quas excepturi error blanditiis reiciendis sed fugiat, omnis quisquam est voluptatibus deleniti amet expedita commodi itaque? Assumenda possimus cupiditate, itaque optio quam debitis, rerum quidem repellendus expedita vero necessitatibus cum explicabo dolores nihil accusantium voluptatum, architecto soluta nulla provident veniam deserunt molestiae. Voluptatibus nam aspernatur quod corrupti quasi odit at a reprehenderit ex inventore.
+                <p class="text-lg py-2">
+                    Nakon godina iskustva, svatko u svom području, odlučili smo se uložiti znanje, vrijeme i trud
+                    u novi način komuniciranja koji je vezan uz NFC tehnologiju koja polako postaje
+                    svakodnevnica uz pametne telefone u kojima je već ugrađena.
+                    Naša priča je jednostavna, želimo ubrzati komunikacijske procese za tvrtke i turizam, biti
+                    dodana vrijednost.
+                </p>
+                <p class="text-lg py-2">
+                  Naš prvi proizvod je i-b card s kojim izlazimo na tržište u namjeri da se papirnate vizit kartice
+u potpunosti zamjene digitalnim što tvrtkama donosi dodatne uštede, podiže vrijednost
+njihovog brenda.
+                </p>
+                <p class="text-lg py-2">
+                  Klijenti su nam na prvom mjestu i zbog toga smo se u potpunosti okrenuli personalizaciji
+naših proizvoda.
+                </p>
+                <p class="text-lg py-2">
+                  Imamo vlastitu proizvodnju u Zagrebu i sve što zamislimo s našim timom možemo ostvariti
+za klijenta.
+                </p>
+                <p class="text-lg py-2">
+Cilj nam je zadovoljstvo klijenata i želja za dugotrajnom suradnjom.
+                </p>
+                <p class="text-lg py-2">
+                  Javite nam se s povjerenjem.
                 </p>
            </div>
 
            <div class="lg:mb-0 mb-3 flex flex-col justify-center">
                 <h1 class="text-left pb-20 text-4xl">Our team</h1>
-                <div class="flex flex-col items-evenly justify-evenly">
+                <div      class="flex flex-col items-evenly justify-evenly">
                    <div class="flex lg:flex-row md:flex-row flex-col mb-5">
-                        <div class="px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
-                          <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Marko Aleksic</p>
-                          <p class="text-xl font-normal">CEO</p>
-                         <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
-                        </div>
+                  
 
- <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 flex flex-col justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
                          <p class="text-2xl font-bold">Bojan Juric</p>
                           <p class="text-xl font-normal">Digital Marketing</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
-                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 flex flex-col justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
                          <p class="text-2xl font-bold">Bojan Peric</p>
                           <p class="text-xl font-normal">Developer</p>
                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
-                        </div>
-        
-             
-
-                
+                        </div>     
                    </div>
 
                <div class="flex-col md:flex-row lg:flex-row flex">
-                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 flex flex-col justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
-                          <p class="text-xl font-normal">Development lead</p>
-                         <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
+                          <p class="text-2xl font-bold">Ivan Hadzi Cenic</p>
+                          <p class="text-xl font-normal">Developer</p>
+                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
 
-                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
+                         <div class="lg:mb-0 mb-3 px-5 py-5 flex flex-col justify-center items-center">
                           <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Pavle Janjusevic</p>
-                          <p class="text-xl font-normal">Developer/2</p>
-                         <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
+                          <p class="text-2xl font-bold">Pavle Janjusevic</p>
+                          <p class="text-xl font-normal">Developer</p>
+                          <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
                         </div>
-
-                         <div class="lg:mb-0 mb-3 px-5 py-5 theme-color-1 text-white flex flex-col border-solid border-2 justify-center items-center">
-                          <img class="rounded-full px-10 py-10" src="../static/images/ivan.png"/>
-                         <p class="text-2xl font-bold">Sandro Hamzic</p>
-                          <p class="text-xl font-normal">Sales/Marketing</p>
-                         <p class="text-center">Izabrao sam ovo zato sto volim ono sto radim. Ja sam car i lorem ipsum dolor sit amet. I jos nesto da napisemo po 50-60 reci svako bilo bi super.</p>
-                        </div>
-
-
-                
-                   </div>
+             
+               </div>
 
 
               

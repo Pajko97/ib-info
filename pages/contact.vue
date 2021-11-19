@@ -10,7 +10,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
+export default {
+  head() {
+      return {
+        title: 'Kontakt',
+        meta: [
+          {
+            hid: 'description__contact',
+            name: 'description',
+            content: 'Kontaktirajte nas. Zelimo da su nasi klijenti zadovoljni nasom uslugom.'
+          }
+        ]
+      }
+    }
+}
 </script>

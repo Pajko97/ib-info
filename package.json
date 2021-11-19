@@ -18,7 +18,9 @@
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.28.1",
     "nuxt-video-player": "^1.0.17",
+    "slither-slider": "^2.11.0",
     "vue-responsive-video-background-player": "^1.2.2",
+    "vue-tiny-slider": "^0.1.39",
     "vuex": "^3.6.2"
   },
   "devDependencies": {

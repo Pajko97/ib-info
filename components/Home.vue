@@ -1,17 +1,52 @@
 <template>
   <div>
-    <div class="section-1 relative h-screen flex flex-col  overflow-hidden lg:items-center lg:justify-center">
-      <div class="flex-flex-col absolute top-0 right-0 z-50 lg:mr-5 lg:mt-5 items-center text-center justify-center">
-            <p class="text-base text-white pb-2">{{ $t('nav_language')}}</p>
+    <div class="section-1 h-screen flex flex-col lg:items-center z-30 lg:justify-center">
+      
+      <div class="absolute z-10 lg:block hidden">
+                 <video
+              loop
+              autoplay
+              muted
+              id="myvideo"
+              class="w-full h-full"
+            ><source
+            src="../static/videos/home_video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+
+       <div class="absolute z-10 lg:hidden visible">
+                 <video
+              loop
+              autoplay
+              muted
+              id="myvideo"
+              class="w-full h-full"
+            ><source
+            src="../static/videos/landing_bg_mobile.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+
+
+      <div class="flex flex-col lg:block hidden absolute top-0 right-0 lg:mr-5 lg:mt-5 items-center text-center justify-center z-20">
+            <p class="text-base text-white pb-2">Language</p>
             <div class="flex flex-row">
-              <nuxt-link class="theme-color-1 text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')">English</nuxt-link>
-              <nuxt-link class="theme-color-1 text-white text-sm px-2 py-2" :to="switchLocalePath('hr')">Hrvatski</nuxt-link>
+              <nuxt-link class="text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')"><img width="40" height="40"  src="../static/images/flag_uk.png"/></nuxt-link>
+              <nuxt-link class="text-white text-sm px-2 py-2" :to="switchLocalePath('hr')"><img width="40"  height="40"  src="../static/images/croatia_flag.png"/></nuxt-link>
             </div>
-          </div>
-      <div class="w-screen h-screen absolute bg-over z-10"></div>
-      <div class="flex flex-col z-20 items-center justify-centers">
+        </div>
+      <div class="w-full h-full absolute bg-over z-10"></div>
+      <div class="flex flex-col items-center justify-centers z-40">
+        
         <Navbar />
-        <div class="flex flex-col justify-space-around">
+        <div class="flex flex-col justify-space-around ">
+    
+          
           <h1
             class="text-center text-white lg:text-6xl text-3xl pr-5 pl-5 mt-32"
           >
@@ -43,26 +78,13 @@
           <p class="text-white text-2xl">{{ $t('home_app_not_needed') }}</p>
         </div>
       </div>
-<!--             <div class="overlay overflow-hidden z-40 w-screen h-screen relative"></div>
- -->
-      <video
-        autoplay
-        loop
-        muted
-        class="lg:bg-blend-darken absolute z-0 w-auto min-w-full min-h-full max-w-none"
-      >
-        <source
-          src="../static/videos/landing_bg_video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+  
     </div>
 
     <div class="section-2 flex flex-col p-5 lg:flex-row bg-white">
       <div class="mr-20 mb-5 flex flex-col items-start lg:pt-20 lg:pl-20 lg:pb-20">
-        <h1 class="lg:text-5xl text-gray-400">{{ $t('home_section_2_h1') }}</h1>
-        <h3 class="lg:text-4xl text-xl font-bold lg:pt-5 lg:pb-5 text-gray-400">
+        <h1 class="lg:text-5xl font-theme-1">{{ $t('home_section_2_h1') }}</h1>
+        <h3 class="lg:text-4xl text-xl font-bold text-gray-400">
           {{ $t('home_section_2_h3') }}
         </h3>
           <h4 class="lg:text-3xl text-xl font-bold lg:pt-5 lg:pb-5 text-black">{{ $t('home_section_2_h4')}}</h4>
@@ -91,29 +113,19 @@
         </button>
       </div>
       <div class="flex flex-col justify-center items-center">
-            <video
-              controls
-              loop
-              muted
-              class="w-full h-full"
-            >
-        <source
-          src="../static/videos/landing_bg_video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>  
+        <img class="lg:pr-20" src="../static/images/proba5gif.gif" /> 
+
+      <!-- Ako ne posalje ostavi ovako -->
       </div>
  </div>
 
-    <div class="section-3 flex flex-col md:flex-row justify-evenly items-center">
+    <!-- <div class="section-3 flex flex-col md:flex-row justify-evenly items-center">
       <p class="lg:text-2xl text-lg text-gray-600 text-center mr-3 ml-3 mt-3 font-bold lg:ml-20 lg:mr-20">
         {{ $t('home_section_3_text')}}
       </p>
       <img src="../static/images/companies_2.png"/>
-    </div>
-
-    <div
+    </div> -->
+        <div
       class="section-4 lg:pl-40 flex pr-3 pl-3 flex-col h-screen justify-center items-center lg:items-start"
     >
       <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_1')}}</p>
@@ -137,19 +149,112 @@
         {{ $t('home_button') }}
       </button>
     </div>
-    <div
-      class="section-5 flex flex-col items-center justify-center lg:mr-20 lg:ml-20"
-    >
+    <!-- Proizvodi -->
+            <h1 class="text-4xl text-center pt-10">All available products</h1>
+
+       <div class="section-products flex flex-col justify-center items-center lg:flex-row lg:mx-20 lg:my-20">
+
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+        <img width="300" src="../static/images/products/pure_white/pure_white.png" />
+         <div class="shadow-small"></div>
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_standard')}}</h3>
+        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
+          {{ $t('products_p_standard')}}
+        </p>
+        
+        <nuxt-link :to="localePath('/products/standard')">
+         <button
+          class="
+            pr-9
+            pl-9
+            pt-3
+            pb-3
+            btn
+            rounded-full
+            lg:text-xl
+            text-lg
+            theme-color-1
+            text-white
+          "
+        >
+          {{ $t('products_button_limited')}}
+        </button></nuxt-link>
+<!--         <p class="text-xl font-bold pt-10">{{ $t('products_price_2')}}</p>
+ -->      </div>
+
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+        <img width="300" src="../static/images/products/gold/gold_metal.png" />
+        <div class="shadow-small"></div>
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_limited')}}</h3>
+        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
+          {{ $t('products_p_limited')}}
+        </p>
+        
+        <nuxt-link :to="localePath('/products/limited')"> <button
+          class="
+            pr-9
+            pl-9
+            pt-3
+            pb-3
+            btn
+            rounded-full
+            lg:text-xl
+            text-lg
+            theme-color-1
+            text-white
+          "
+        >
+          {{ $t('products_button_limited')}}
+        </button></nuxt-link>
+
+<!--         <p class="text-xl font-bold pt-10">{{ $t('products_price_2')}}</p>
+ -->      </div>
+
+  <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+        <img width="300" src="../static/images/products/black_bamboo/black_bamboo.png" />
+        <div class="shadow-small"></div>
+        <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_custom')}}</h3>
+        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
+          {{ $t('products_p_custom')}}
+        </p>
+     
+        <nuxt-link :to="localePath('/products/custom')"><button
+          class="
+            pr-9
+            pl-9
+            pt-3
+            pb-3
+            btn
+            rounded-full
+            lg:text-xl
+            text-lg
+            theme-color-1
+            text-white
+          "
+        >
+          {{ $t('products_button_limited')}}
+        </button></nuxt-link>
+
+<!--         <p class="text-xl font-bold pt-10">{{ $t('products_price_2')}}</p>
+ -->      </div>
+    </div>
+ 
       <h1 class="lg:text-5xl text-center text-2xl lg:my-5 mx-14 my-5 pb-3 lg:mt-20 lg:mb-20 flex-col font-semibold">
         {{ $t('section_5_h1')}}
       </h1>
-      <div class="flex flex-col lg:flex-row justify-center lg:mt-20 lg:mb-20 my-10 items-space-around">
+
+
+    <div
+      class="section-5 lg:show hide flex-col items-center justify-center lg:mr-20 lg:ml-20"
+    >
+    
+      <div class="flex flex-row" >
         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
               text-2xl
-              lg:text-6xl text-white
+              lg:text-5xl text-white
               bg-black
               pt-1.5
               pb-1.5
@@ -160,16 +265,31 @@
           >
             1
           </div>
-          <h1 class="lg:text-4xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
-          <p class="text-gray-600 text-xl text-center">{{ $t('section_5_p_1')}}</p>
+          <h1 class="lg:text-2xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
+          <div class="flex flex-row">
+            <div class="flex flex-col mr-10 justify-center items-center">
+              <img class="w-80" src="../static/images/products/iphone.png" />
+              <p class="text-center pt-10">{{ $t('iphone_step_description')}}</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class="w-80" src="../static/images/products/android.png" />
+                <p class="text-center pt-10">{{ $t('android_step_description')}}</p>
+            </div>
+
+          </div>
         </div>
+      </div>
+        
+      <div class="flex flex-col lg:flex-row justify-center lg:mt-20 lg:mb-20 my-10 items-space-around">
+        
 
         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
               text-2xl
-              lg:text-6xl text-white
+              lg:text-5xl text-white
               bg-black
               pt-1.5
               pb-1.5
@@ -180,17 +300,16 @@
           >
             2
           </div>
-          <h1 class="lg:text-4xl text-2xl text-center">{{ $t('section_5_h1_3')}}</h1>
-          <p class="text-gray-600 text-xl text-center">
-            {{ $t('section_5_p_2')}}
-          </p>
+          <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_3')}}</h1>
+          <img src="../static/images/screen__guide_1.png"/>
+
         </div>
 
         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
-              lg:text-6xl
+              lg:text-5xl
               text-2xl
               text-white
               bg-black
@@ -203,72 +322,34 @@
           >
             3
           </div>
-          <h1 class="lg:text-4xl text-2xl text-center">{{ $t('section_5_h1_4')}}</h1>
-          <p class="text-gray-600 text-xl text-center">
-            {{ $t('section_5_p_3')}}
-          </p>
+          <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_4')}}</h1>
+          <img src="../static/images/screen_guide_2.png"/>
+
+        </div>
+         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
+          <div
+            class="
+              rounded-full
+              text-2xl
+              lg:text-5xl text-white
+              bg-black
+              pt-1.5
+              pb-1.5
+              pr-5
+              pl-5
+              mb-3
+            "
+          >
+            4
+          </div>
+          <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_5')}}</h1>
+          <img src="../static/images/screen_guide_3.png"/>
         </div>
       </div>
 
-      <div class="flex items-center lg:flex-row-reverse flex-col flex-col-reverse">
-    <video
-        loop
-        controls
-        muted
-        class="w-full h-full px-5 lg:px-0"
-      >
-        <source
-          src="../static/videos/landing_bg_video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>  
-        <img class="py-5 lg:py-0 mr-14 ml-14 origin-center transform rotate-90 w-10" src="../static/images/pointer.png" />
-        <h1 class="lg:text-5xl text-grey-600">
-          {{ $t('section_5_h1_5')}}
-        </h1>
-      </div>
+     
     </div>
 
-    <div
-      class="section-6 flex flex-col items-center justify-center lg:mr-20 lg:ml-20"
-    >
-      <h1 class="lg:text-6xl text-2xl text-center px-5 py-10 lg:mt-20 lg:mb-20">
-        {{ $t('section_6_h1')}}
-      </h1>
-      <div class="flex lg:flex-row flex-col">
-        <div class="flex flex-col justify-start items-center mx-14 my-5">
-          <img src="../static/images/screen_1.png" />
-          <h3 class="text-2xl font-semibold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_1')}}</h3>
-          <p class="text-base text-center">
-            {{ $t('section_6_p_1')}}
-          </p>
-        </div>
-        <div class="flex flex-col justify-start items-center mx-14 my-5">
-          <img  src="../static/images/screen_2.png" />
-          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_2')}}</h3>
-          <p class="text-base text-center">
-            {{ $t('section_6_p_2')}}
-          </p>
-        </div>
-
-       <div class="flex flex-col justify-start items-center mx-14 my-5">
-          <img src="../static/images/screen_3.png" />
-          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_3')}}</h3>
-          <p class="text-base text-center">
-            {{ $t('section_6_p_3')}}
-          </p>
-        </div>
-
-        <div class="flex flex-col justify-start items-center mx-14 my-5">
-          <img src="../static/images/screen_4.png" />
-          <h3 class="text-2xl font-bold text-center lg:pt-5 lg:pb-5 pt-0">{{ $t('section_6_h3_4')}}</h3>
-          <p class="text-base text-center">
-            {{ $t('section_6_p_4')}}
-            </p>
-        </div>
-      </div>
-    </div>
 
     <Hint />
 
@@ -276,13 +357,19 @@
   </div>
 </template>
 <script lang="ts">
+import '../static/main.css'
 
 export default {
+    transition: {
+    name: 'home',
+    mode: 'out-in'
+  },
   head () {
     return {
-      title: 'Home',
+      
+      title: 'i-b cards',
       meta: [
-        { hid: 'description', name: 'i-b cards', content: 'About our company Nuxt.js ' }
+        { hid: 'description__home', name: 'description', content: 'Opis stranice' }
       ]
     }
   }
@@ -314,17 +401,37 @@ export default {
   background-position: center;
   background-size: cover;
 }
+.shadow-small {
+ box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+-webkit-box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+-moz-box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+height: 5px;
+width:60%;
+margin-top:-10px;
+}
 
 .theme-color-1 {
   background-color: #231f20;
 }
-
+.font-theme-1 {
+    color: #231f20;
+}
+.theme-color-2 {
+  background-color : #646464;
+}
 .bg-over {
   background-color: rgba(52,52,52,0.5);
 }
 
 .video_1 {
   width: 500px!important;
+}
+.show {
+  display:flex;
+}
+
+.hide {
+  display: none;
 }
 
 .z-ind-middle {
@@ -350,6 +457,19 @@ export default {
 hr.solid {
   
   border-top: 3px solid #000000;
+}
+.hide-video {
+  display:none;
+}
+.show-video {
+  display:block;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');

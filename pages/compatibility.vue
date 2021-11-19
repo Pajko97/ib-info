@@ -8,7 +8,19 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 
-export default Vue.extend({})
+export default {
+  head() {
+      return {
+        title: 'Kompatibilnost',
+        meta: [
+          {
+            hid: 'description__compatibility',
+            name: 'description',
+            content: 'Kompatibilnost telefona koji mogu koristiti i-b card digitalnu biznis karticu.'
+          }
+        ]
+      }
+    }
+}
 </script>
