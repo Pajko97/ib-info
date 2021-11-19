@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col justify-center lg:mx-40 lg:my-20 mx-14 my-8 items-center">
-      <h1 class="text-left pb-20 text-2xl lg:text-4xl">List of compatible devices</h1>
+      <h1 class="text-left pb-20 text-2xl lg:text-4xl">{{ $t('compatibility_headline') }}</h1>
       <div class="flex flex-col justify-between items-center">
           <div class="flex lg:flex-row flex-col">
               <div class="flex flex-col pb-10 pr-10">

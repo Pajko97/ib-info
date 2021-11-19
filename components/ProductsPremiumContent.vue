@@ -1,8 +1,8 @@
 <template>
   <div class="bg-black flex flex-col justify-center pt-20 pb-20 lg:px-40 px-10 items-center">
     <h1 class="lg:text-4xl text-2xl text-white text-left pb-20">Premium kartice</h1>
-    <div class="flex flex-col lg:flex-row justify-around items-around">
-          <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+    <div class="flex lg:flex-row flex-wrap justify-start items-center">
+          <div class="w-80 mx-5 flex flex-col justify-center items-center lg:mb-0 mb-5">
          <img src="../static/images/products/gold_glitter/gold_glitter.png" />
 <!--         <img src="../static/images/amazon_logo.png" />
  -->            
@@ -32,12 +32,12 @@
         <p class="text-xl font-bold pt-10">FROM 988.00KN</p>
       </div>
 
-        <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+        <div class="flex w-80 mx-5 flex-col justify-center items-center lg:mb-0 mb-5">
          <img src="../static/images/products/rose_gold_glitter/rose_gold_glitter.png" />
 <!--         <img src="../static/images/amazon_logo.png" />
  -->            
- <h3 class="text-2xl pb-2 text-center font-bold pt-5">Pink glitter</h3>
-        <p class="text-lg pb-5 text-center pl-10 pr-10">
+ <h3 class="text-2xl pb-2 text-center text-white font-bold pt-5">Pink glitter</h3>
+        <p class="text-lg pb-5 text-center text-white pl-10 pr-10">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, aperiam. Veniam fugiat deleniti tempore ipsam est eius, rerum perspiciatis fugit.
         </p>
   
@@ -60,7 +60,7 @@
         <p class="text-xl font-bold pt-10">FROM 988.00KN</p>
       </div>
 
-       <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+       <div class="flex w-80 mx-5 flex-col justify-center items-center lg:mb-0 mb-5">
          <img src="../static/images/products/gold_glitter/gold_glitter.png" />
 <!--         <img src="../static/images/amazon_logo.png" />
  -->            
@@ -90,7 +90,7 @@
         <p class="text-xl font-bold pt-10">FROM 988.00KN</p>
       </div>
 
-       <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+       <div class="flex flex-col mx-5 w-80 justify-center items-center lg:mb-0 mb-5">
          <img src="../static/images/products/gold_glitter/gold_glitter.png" />
 <!--         <img src="../static/images/amazon_logo.png" />
  -->            
@@ -120,7 +120,7 @@
         <p class="text-xl font-bold pt-10">FROM 988.00KN</p>
       </div>
 
-       <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+       <div class="flex flex-col mx-5 w-80 justify-center items-center lg:mb-0 mb-5">
          <img src="../static/images/products/gold_glitter/gold_glitter.png" />
 <!--         <img src="../static/images/amazon_logo.png" />
  -->            

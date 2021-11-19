@@ -113,7 +113,7 @@
         </button>
       </div>
       <div class="flex flex-col justify-center items-center">
-        <img class="lg:pr-20" src="../static/images/proba5gif.gif" /> 
+        <img class="" src="../static/images/proba5gif.gif" /> 
 
       <!-- Ako ne posalje ostavi ovako -->
       </div>
@@ -245,37 +245,34 @@
 
 
     <div
-      class="section-5 lg:show hide flex-col items-center justify-center lg:mr-20 lg:ml-20"
+      class="section-5 flex-col items-center justify-center lg:mr-20 lg:ml-20"
     >
     
-      <div class="flex flex-row" >
+      <div class="flex flex-row items-center justify-center" >
         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
           <div
             class="
               rounded-full
               text-2xl
-              lg:text-5xl text-white
+              lg:text-4xl text-white
               bg-black
-              pt-1.5
-              pb-1.5
-              pr-5
-              pl-5
-              mb-3
+              flex
+              justify-center
+              items-center
+              broj
             "
           >
             1
           </div>
           <h1 class="lg:text-2xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
-          <div class="flex flex-row">
-            <div class="flex flex-col mr-10 justify-center items-center">
-              <img class="w-80" src="../static/images/products/iphone.png" />
-              <p class="text-center pt-10">{{ $t('iphone_step_description')}}</p>
-            </div>
+          <div class="flex flex-col">
+                <img width="600" src="../static/images/phones_guide.png"/>
+                <div class="flex flex-row justify-between items-center">
+                  <p class="text-center pt-10">{{ $t('android_step_description')}}</p>
+                  <p class="text-center pt-10">{{ $t('iphone_step_description')}}</p>
+                </div>
+                
 
-            <div class="flex flex-col justify-center items-center">
-                <img class="w-80" src="../static/images/products/android.png" />
-                <p class="text-center pt-10">{{ $t('android_step_description')}}</p>
-            </div>
 
           </div>
         </div>
@@ -289,13 +286,12 @@
             class="
               rounded-full
               text-2xl
-              lg:text-5xl text-white
+              lg:text-4xl text-white
               bg-black
-              pt-1.5
-              pb-1.5
-              pr-5
-              pl-5
-              mb-3
+              flex
+              justify-center
+              items-center
+              broj
             "
           >
             2
@@ -309,15 +305,13 @@
           <div
             class="
               rounded-full
-              lg:text-5xl
               text-2xl
-              text-white
+              lg:text-4xl text-white
               bg-black
-              pt-1.5
-              pb-1.5
-              pr-5
-              pl-5
-              mb-3
+              flex
+              justify-center
+              items-center
+              broj
             "
           >
             3
@@ -327,22 +321,9 @@
 
         </div>
          <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
-          <div
-            class="
-              rounded-full
-              text-2xl
-              lg:text-5xl text-white
-              bg-black
-              pt-1.5
-              pb-1.5
-              pr-5
-              pl-5
-              mb-3
-            "
-          >
-            4
-          </div>
-          <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_5')}}</h1>
+                      <img class="animate-pulse" height="100" width="100" src="../static/images/logo_white_on_black.png"/>
+
+          <h1 class="lg:text-2xl text-2xl text-center hidden">{{ $t('section_5_h1_5')}}</h1>
           <img src="../static/images/screen_guide_3.png"/>
         </div>
       </div>
@@ -470,6 +451,10 @@ hr.solid {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+.broj {
+  width:60px;
+  height:60px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');

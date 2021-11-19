@@ -4,11 +4,13 @@
      <div class="flex flex-col justify-around items-around">
        
        <div class="flex flex-col">
-         <h1 class="text-3xl my-20 text-center theme-color-1 font-bold md:text-center lg:text-center py-5 text-white">Premium cards</h1>
+         <h1 class="text-3xl my-20 text-center font-bold md:text-center border-solid border-b-4 lg:text-center py-5 text-gray-800">Premium cards</h1>
 
-         <div class="flex flex-row flex-wrap lg:justify-center justify-center items-center">
+         <div class="flex flex-row flex-wrap lg:justify-start justify-start items-center">
           <div class="max-w-24 mx-5 flex flex-col justify-center items-center lg:mb-5 mb-5">
         <img class="w-80" src="../static/images/products/black_metal/black_metal.png" />
+                 <div class="shadow-small"></div>
+
         <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_powerful_black_name') }}</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
             {{ $t('product_powerful_black_description') }}
@@ -35,6 +37,8 @@
 
          <div class="max-w-24 mx-5 flex flex-col justify-center items-center lg:mb-5 mb-5">
         <img class="w-80" src="../static/images/products/gold/gold_metal.png" />
+                 <div class="shadow-small"></div>
+
         <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_golden_shine_name') }}</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
             {{ $t('product_golden_shine_description') }}
@@ -61,6 +65,8 @@
 
          <div class="max-w-24 mx-5 flex flex-col justify-center items-center lg:mb-5 mb-5">
         <img class="w-80" src="../static/images/products/rose_gold/rose_gold.png" />
+                 <div class="shadow-small"></div>
+
         <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_rose_gold_name') }}</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
             {{ $t('product_rose_gold_description') }}
@@ -87,6 +93,8 @@
 
          <div class="max-w-24 mx-5 flex flex-col justify-center self-start items-center lg:mb-5 mb-5">
         <img class="w-80" src="../static/images/products/black_bamboo/black_bamboo.png" />
+                 <div class="shadow-small"></div>
+
         <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_bamboo_name') }}</h3>
         <p class="text-lg self-center description_min pb-5 text-center pl-10 pr-10 max-w-xs">
             {{ $t('product_bamboo_description') }}
@@ -113,6 +121,8 @@
 
          <div class="max-w-24 mx-5 flex flex-col justify-center items-center lg:mb-5 mb-5">
         <img class="w-80" src="../static/images/products/black_pvc/black_pvc.png" />
+                 <div class="shadow-small"></div>
+
         <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_black_matte_name') }}</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
             {{ $t('product_black_matte_description') }}
@@ -142,11 +152,13 @@
        </div>
 
        <div class="flex flex-col">
-         <h1 class="text-3xl my-20 text-center theme-color-1 font-bold md:text-center lg:text-center py-5 text-white">Limited cards</h1>
-            <div class="flex flex-col lg:flex-row flex-wrap justify-center items-center">
+         <h1 class="text-3xl my-20 text-center font-bold md:text-center lg:text-center py-5 border-solid border-b-4 text-gray-800">Limited cards</h1>
+            <div class="flex flex-col lg:flex-row flex-wrap justify-start items-center">
               
                <div class="flex mx-5 flex-col max-w-sm justify-center items-center">
-          <img  height="250"  src="../static/images/products/gold_glitter/gold_glitter.png" />
+          <img  class="w-80"  src="../static/images/products/gold_glitter/gold_glitter.png" />
+                   <div class="shadow-small"></div>
+
           <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_glitter_yellow_name')}}</h3>
           <p class="text-lg description_min pb-5 text-center pl-10 pr-10">
             {{ $t('product_glitter_yellow_description')}}
@@ -172,7 +184,9 @@
       </div>
 
        <div class="flex flex-col mx-5 max-w-sm justify-center items-center">
-          <img height="250" src="../static/images/products/rose_gold_glitter/rose_gold_glitter.png" />
+          <img class="w-80" src="../static/images/products/rose_gold_glitter/rose_gold_glitter.png" />
+                   <div class="shadow-small"></div>
+
           <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_glitter_pink_name')}}</h3>
           <p class="text-lg description_min pb-5 text-center pl-10 pr-10">
             {{ $t('product_glitter_pink_description')}}
@@ -202,12 +216,14 @@
        </div>
 
        <div class="flex flex-col">
-         <h1 class="text-3xl my-20 text-center bg-black font-bold md:text-center lg:text-center py-5 text-white">Standard cards</h1>
-         <div class="flex lg:flex-row flex-col justify-between items-between">
+         <h1 class="text-3xl my-20 text-center font-bold md:text-center lg:text-center py-5 text-gray-800 border-solid border-b-4">Standard cards</h1>
+         <div class="flex lg:flex-row flex-col justify-start items-center">
             <div class="flex flex-col lg:flex-row justify-between flex-wrap items-between">
           <div class="flex mx-5 flex-col max-w-sm justify-center items-center lg:mb-0 mb-5">
         <img class="w-80" src="../static/images/products/pure_white/pure_white.png" />
-        <h3 class="text-2xl pb-2 text-center font-bold pt-5">{{ $t('product_pure_white_name')}}</h3>
+                 <div class="shadow-small"></div>
+
+        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Pure white</h3>
         <p class="text-lg pb-5 text-center pl-10 pr-10">
             {{ $t('product_pure_white_description')}}
         </p>
@@ -231,14 +247,13 @@
         <p class="text-xl font-bold pt-10"></p>
       </div>
 
+        <div class="flex mx-5 flex-col max-w-sm justify-center items-center lg:mb-0 mb-5">
+        <img class="w-80" src="../static/images/products/pure_white/pure_white.png" />
+                 <div class="shadow-small"></div>
 
-    </div>
-
-            <div class="flex mx-5 flex-col max-w-sm justify-center items-center lg:mb-0 mb-5">
-        <img class="w-80" src="../static/images/products/cherry_wood/cherry.png" />
-        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Cherry wood</h3>
-        <p class="text-lg pb-5 text-center pl-10 pr-10 description_min">
-            {{ $t('product_cherry_description')}}
+        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Pure white</h3>
+        <p class="text-lg pb-5 text-center pl-10 pr-10">
+            {{ $t('product_pure_white_description')}}
         </p>
   
        <button
@@ -259,6 +274,41 @@
         </button>
         <p class="text-xl font-bold pt-10"></p>
       </div>
+
+        <div class="flex mx-5 flex-col max-w-sm justify-center items-center lg:mb-0 mb-5">
+        <img class="w-80" src="../static/images/products/pure_white/pure_white.png" />
+                 <div class="shadow-small"></div>
+
+        <h3 class="text-2xl pb-2 text-center font-bold pt-5">Pure white</h3>
+        <p class="text-lg pb-5 text-center pl-10 pr-10">
+            {{ $t('product_pure_white_description')}}
+        </p>
+  
+       <button
+          class="
+            pr-9
+            pl-9
+            pt-3
+            pb-3
+            btn
+            rounded-full
+            lg:text-xl
+            text-lg
+            theme-color-1
+            text-white
+          "
+        >
+          SEE MORE
+        </button>
+        <p class="text-xl font-bold pt-10"></p>
+      </div>
+
+      
+
+
+    </div>
+
+         
 
 
     </div>
@@ -296,6 +346,17 @@ export default {
 .description_min {
   min-height:150px;
 }
+
+.shadow-small {
+ box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+-webkit-box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+-moz-box-shadow: 0px 11px 11px -1px rgba(0,0,0,0.88);
+height: 5px;
+width:60%;
+margin-top:-10px;
+}
+
+
 * {
   font-family: 'Nunito Sans';
 }

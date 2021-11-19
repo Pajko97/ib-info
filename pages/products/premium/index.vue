@@ -3,8 +3,8 @@
   <div>
     <NavbarInverted />
     <ProductsPremiumContent/>
-    <Hint />
-    <Footer />
+<!--     <Hint />
+ -->    <Footer />
   </div>
 </template>
 
