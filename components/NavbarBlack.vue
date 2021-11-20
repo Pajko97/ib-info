@@ -1,6 +1,6 @@
 <template>
   <div :class="this.menu_open ? 'pt-0 overlay' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
-    <NuxtLink v-if="!this.menu_open" to="/" ><h1 class="text-6xl">i-b card</h1></NuxtLink>
+    <NuxtLink v-if="!this.menu_open" to="/" ><img src="../static/images/logo_new_black.png"/></NuxtLink>
 
     <nav :class="this.menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
   <div class="max-w-6xl mx-auto lg:px-4 px-0" >
@@ -14,7 +14,7 @@
         <div class="hidden md:flex items-center space-x-1">
             <nuxt-link :to="localePath('/')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_home') }}</p></nuxt-link>
             <nuxt-link :to="localePath('products')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
-            <nuxt-link :to="localePath('giftbox')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_gift') }}</p></nuxt-link>
+            <nuxt-link :to="localePath('/products/giftbox')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_gift') }}</p></nuxt-link>
             <nuxt-link :to="localePath('compatibility')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
             <nuxt-link :to="localePath('about')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
             <nuxt-link :to="localePath('contact')"><p href="#" class="py-5 px-3 text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
@@ -43,7 +43,7 @@
     
             <nuxt-link :to="localePath('/')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_home ')}}</p></nuxt-link>
             <nuxt-link :to="localePath('products')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products ')}}</p></nuxt-link>
-            <nuxt-link :to="localePath('giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_gift ')}}</p></nuxt-link>
+            <nuxt-link :to="localePath('/products/giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_gift ')}}</p></nuxt-link>
             <nuxt-link :to="localePath('compatibility')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_compatibility ')}}</p></nuxt-link>
             <nuxt-link :to="localePath('about')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_about ')}}</p></nuxt-link>
             <nuxt-link :to="localePath('contact')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_contact ')}}</p></nuxt-link>

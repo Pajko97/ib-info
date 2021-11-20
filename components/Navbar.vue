@@ -16,7 +16,7 @@
         <div class="hidden md:flex items-center space-x-1">
           <nuxt-link :to="localePath('products')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
           <nuxt-link :to="localePath('compatibility')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
-          <nuxt-link :to="localePath('giftbox')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">Gift box</p></nuxt-link>
+          <nuxt-link :to="localePath('/products/giftbox')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900">Gift box</p></nuxt-link>
           <nuxt-link :to="localePath('about')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
           <nuxt-link :to="localePath('contact')"><p href="#" class="py-5 px-3 text-white text-2xl hover:text-gray-900 hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
         </div>
@@ -42,7 +42,7 @@
   <div class="mobile-menu fixed bg-black" :class="this.menu_open ? 'visible z-50' : 'invisible'">
       <nuxt-link :to="localePath('products')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products') }}</p></nuxt-link>
           <nuxt-link :to="localePath('compatibility')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
-          <nuxt-link :to="localePath('giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Gift box</p></nuxt-link>
+          <nuxt-link :to="localePath('/products/giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Gift box</p></nuxt-link>
           <nuxt-link :to="localePath('about')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_about') }}</p></nuxt-link>
           <nuxt-link :to="localePath('contact')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_contact') }}</p></nuxt-link>
 

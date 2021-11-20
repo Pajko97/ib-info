@@ -27,6 +27,7 @@
             ><source
             src="../static/videos/landing_bg_mobile.mp4"
             type="video/mp4"
+            
           />
           Your browser does not support the video tag.
         </video> 
@@ -113,7 +114,7 @@
         </button>
       </div>
       <div class="flex flex-col justify-center items-center">
-        <img class="" src="../static/images/proba5gif.gif" /> 
+        <img class="" alt="i-b card - novi nacin povezivanja" src="../static/images/proba5gif.gif" /> 
 
       <!-- Ako ne posalje ostavi ovako -->
       </div>
@@ -155,7 +156,7 @@
        <div class="section-products flex flex-col justify-center items-center lg:flex-row lg:mx-20 lg:my-20">
 
       <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
-        <img width="300" src="../static/images/products/pure_white/pure_white.png" />
+        <img alt="white PVC i-b card" width="300" src="../static/images/products/pure_white/pure_white.png" />
          <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_standard')}}</h3>
         <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
@@ -183,7 +184,7 @@
  -->      </div>
 
       <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
-        <img width="300" src="../static/images/products/gold/gold_metal.png" />
+        <img alt="golden brushed metal i-b card" width="300" src="../static/images/products/gold/gold_metal.png" />
         <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_limited')}}</h3>
         <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
@@ -211,7 +212,7 @@
  -->      </div>
 
   <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
-        <img width="300" src="../static/images/products/black_bamboo/black_bamboo.png" />
+        <img alt="custom i-b card" width="300" src="../static/images/products/black_bamboo/black_bamboo.png" />
         <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_custom')}}</h3>
         <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
@@ -265,15 +266,12 @@
             1
           </div>
           <h1 class="lg:text-2xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
-          <div class="flex flex-col">
-                <img width="600" src="../static/images/phones_guide.png"/>
+          <div class="flex flex-col justify-center items-center">
+                <img alt="android/iphone mockup usecase" width="600" src="../static/images/phones_guide.png"/>
                 <div class="flex flex-row justify-between items-center">
-                  <p class="text-center pt-10">{{ $t('android_step_description')}}</p>
-                  <p class="text-center pt-10">{{ $t('iphone_step_description')}}</p>
+                  <p class="text-center pt-10 px-10">{{ $t('android_step_description')}}</p>
+                  <p class="text-center pt-10 px-10">{{ $t('iphone_step_description')}}</p>
                 </div>
-                
-
-
           </div>
         </div>
       </div>
@@ -297,7 +295,7 @@
             2
           </div>
           <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_3')}}</h1>
-          <img src="../static/images/screen__guide_1.png"/>
+          <img alt="i-b card app screen 1" src="../static/images/screen__guide_1.png"/>
 
         </div>
 
@@ -317,14 +315,14 @@
             3
           </div>
           <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_4')}}</h1>
-          <img src="../static/images/screen_guide_2.png"/>
+            <img alt="i-b card app screen 2" src="../static/images/screen_guide_2.png"/>
 
         </div>
          <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
-                      <img class="animate-pulse" height="100" width="100" src="../static/images/logo_white_on_black.png"/>
+            <img alt="i-b card logo" class="animate-pulse" height="100" width="100" src="../static/images/logo_white_on_black.png"/>
 
           <h1 class="lg:text-2xl text-2xl text-center hidden">{{ $t('section_5_h1_5')}}</h1>
-          <img src="../static/images/screen_guide_3.png"/>
+            <img alt="i-b card app screen 3" src="../static/images/screen_guide_3.png"/>
         </div>
       </div>
 

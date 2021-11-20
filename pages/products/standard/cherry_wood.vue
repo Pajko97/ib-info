@@ -29,7 +29,7 @@
 export default {
     head() {
       return {
-        title: 'i-b cards | Pink Glitter',
+        title: 'i-b cards | Cherry Wood',
         meta: [
           {
             hid: 'description__products__limited__cherry_wood',

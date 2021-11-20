@@ -2,30 +2,30 @@
   <div class="flex flex-col justify-center lg:my-10 lg:mx-40 mx-14 my-8 items-start">
            <div class="flex flex-col justify-center pt-10 pb-10">
                 <h1 class="text-left pb-20 text-4xl">About us</h1>
-                <p class="text-lg py-2">
+                <p class="text-lg">
                     Nakon godina iskustva, svatko u svom području, odlučili smo se uložiti znanje, vrijeme i trud
                     u novi način komuniciranja koji je vezan uz NFC tehnologiju koja polako postaje
                     svakodnevnica uz pametne telefone u kojima je već ugrađena.
                     Naša priča je jednostavna, želimo ubrzati komunikacijske procese za tvrtke i turizam, biti
                     dodana vrijednost.
                 </p>
-                <p class="text-lg py-2">
+                <p class="text-lg">
                   Naš prvi proizvod je i-b card s kojim izlazimo na tržište u namjeri da se papirnate vizit kartice
 u potpunosti zamjene digitalnim što tvrtkama donosi dodatne uštede, podiže vrijednost
 njihovog brenda.
                 </p>
-                <p class="text-lg py-2">
+                <p class="text-lg">
                   Klijenti su nam na prvom mjestu i zbog toga smo se u potpunosti okrenuli personalizaciji
 naših proizvoda.
                 </p>
-                <p class="text-lg py-2">
+                <p class="text-lg">
                   Imamo vlastitu proizvodnju u Zagrebu i sve što zamislimo s našim timom možemo ostvariti
 za klijenta.
                 </p>
-                <p class="text-lg py-2">
+                <p class="text-lg">
 Cilj nam je zadovoljstvo klijenata i želja za dugotrajnom suradnjom.
                 </p>
-                <p class="text-lg py-2">
+                <p class="text-lg">
                   Javite nam se s povjerenjem.
                 </p>
            </div>

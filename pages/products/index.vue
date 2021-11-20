@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <NavbarBlack />
+    <NavbarBlack /> 
     <ProductsList />
     <Hint />
     <Footer />
