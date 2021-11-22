@@ -29,7 +29,9 @@
       <div class="md:hidden flex items-center">
         <button @click="mobileMenu" class="mobile-menu-button">
           <img class="animate-spin mt-10 mb-5" v-if="this.menu_open" src="../static/images/cancel.png"/>
-          <img v-else :class="this.menu_open ? 'my-5' : '' " class="w-8 h-8 ml-20" fill="none" viewBox="0 0 24 24" stroke="white" />
+          <svg v-else :class="this.menu_open ? 'my-5' : '' " class="w-8 h-8 ml-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
 
@@ -70,15 +72,12 @@ export default {
     methods: {
         mobileMenu() {
             this.menu_open = !this.menu_open
-        },
-        beforeRouteEnter(from, next) {
-            next(() => {
-                this.previous = from
-            })
+        }
+        
     },
  
 }
-}
+
 
 </script>
 

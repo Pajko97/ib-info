@@ -76,15 +76,12 @@ export default {
         mobileMenu() {
             this.menu_open = !this.menu_open
 
-        },
-        beforeRouteEnter(from, next) {
-            next(() => {
-                this.previous = from
-            })
+        }
+
     },
  
 }
-}
+
 
 </script>
 

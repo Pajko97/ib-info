@@ -1,6 +1,6 @@
 
 <template>
-  <Home/>
+  <UnderConstruction/>
 </template>
 
 <script lang="ts">
