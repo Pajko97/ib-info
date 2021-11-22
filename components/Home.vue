@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section-1 h-screen flex flex-col lg:items-center z-30 lg:justify-center">
+    <div class="section-1 h-screen flex flex-col lg:items-center lg:justify-center">
       
       <div class="absolute z-10 lg:block hidden">
                  <video
@@ -10,7 +10,7 @@
               id="myvideo"
               class="w-full h-full"
             ><source
-            src="../static/videos/home_video.mp4"
+            src="../static/videos/landing_bg_video.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -41,7 +41,6 @@
               <nuxt-link class="text-white text-sm px-2 py-2" :to="switchLocalePath('hr')"><img width="40"  height="40"  src="../static/images/croatia_flag.png"/></nuxt-link>
             </div>
         </div>
-      <div class="w-full h-full absolute bg-over z-10"></div>
       <div class="flex flex-col items-center justify-centers z-40">
         
         <Navbar />
@@ -84,11 +83,10 @@
 
     <div class="section-2 flex flex-col p-5 lg:flex-row bg-white">
       <div class="mr-20 mb-5 flex flex-col items-start lg:pt-20 lg:pl-20 lg:pb-20">
-        <h1 class="lg:text-5xl font-theme-1">{{ $t('home_section_2_h1') }}</h1>
         <h3 class="lg:text-4xl text-xl font-bold text-gray-400">
           {{ $t('home_section_2_h3') }}
         </h3>
-          <h4 class="lg:text-3xl text-xl font-bold lg:pt-5 lg:pb-5 text-black">{{ $t('home_section_2_h4')}}</h4>
+        <h4 class="lg:text-3xl text-xl font-bold lg:pt-5 lg:pb-5 text-black">{{ $t('home_section_2_h4')}}</h4>
 
         <p class="lg:text-3xl">
          {{ $t('home_section_2_description')}}
@@ -151,17 +149,15 @@
       </button>
     </div>
     <!-- Proizvodi -->
-            <h1 class="text-4xl text-center pt-10">All available products</h1>
+            <h1 class="text-4xl text-center pt-10">Svi proizvodi</h1>
 
-       <div class="section-products flex flex-col justify-center items-center lg:flex-row lg:mx-20 lg:my-20">
+       <div class="section-products flex flex-col justify-between items-center lg:flex-row lg:mx-40 lg:my-20">
 
-      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-10">
         <img alt="white PVC i-b card" width="300" src="../static/images/products/pure_white/pure_white.png" />
          <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_standard')}}</h3>
-        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
-          {{ $t('products_p_standard')}}
-        </p>
+       
         
         <nuxt-link :to="localePath('/products/standard')">
          <button
@@ -183,13 +179,11 @@
 <!--         <p class="text-xl font-bold pt-10">{{ $t('products_price_2')}}</p>
  -->      </div>
 
-      <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
+      <div class="flex flex-col justify-center items-center lg:mb-0 mb-10">
         <img alt="golden brushed metal i-b card" width="300" src="../static/images/products/gold/gold_metal.png" />
         <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_limited')}}</h3>
-        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
-          {{ $t('products_p_limited')}}
-        </p>
+       
         
         <nuxt-link :to="localePath('/products/limited')"> <button
           class="
@@ -212,14 +206,12 @@
  -->      </div>
 
   <div class="flex flex-col justify-center items-center lg:mb-0 mb-5">
-        <img alt="custom i-b card" width="300" src="../static/images/products/black_bamboo/black_bamboo.png" />
+        <img alt="custom i-b card" width="300" src="../static/images/products/black_metal/black_metal.png" />
         <div class="shadow-small"></div>
         <h3 class="text-2xl pb-2 font-bold pt-5 text-center">{{ $t('products_h1_custom')}}</h3>
-        <p class="text-lg pb-5 text-center lg:pl-10 lg:pr-10">
-          {{ $t('products_p_custom')}}
-        </p>
      
-        <nuxt-link :to="localePath('/products/custom')"><button
+     
+        <nuxt-link :to="localePath('/products/premium')"><button
           class="
             pr-9
             pl-9
@@ -244,9 +236,19 @@
         {{ $t('section_5_h1')}}
       </h1>
 
-
+               <video
+              loop
+              poster="/images/video_placeholder.png"
+              controls
+              id="myvideo"
+              class="block w-full h-full px-5 pb-5 lg:hidden"
+            ><source
+            src="../static/videos/explainer_mobile.mp4"
+            type="video/mp4"
+          />
+               </video>
     <div
-      class="section-5 flex-col items-center justify-center lg:mr-20 lg:ml-20"
+      class="section-5 flex-col items-center justify-center hidden lg:block md:block lg:mr-20 lg:ml-20"
     >
     
       <div class="flex flex-row items-center justify-center" >
@@ -261,13 +263,14 @@
               justify-center
               items-center
               broj
+              mb-5
             "
           >
             1
           </div>
           <h1 class="lg:text-2xl text-2xl text-center mr-5 ml-5">{{ $t('section_5_h1_2')}}</h1>
           <div class="flex flex-col justify-center items-center">
-                <img alt="android/iphone mockup usecase" width="600" src="../static/images/phones_guide.png"/>
+                <img alt="android/iphone mockup usecase" width="600" src="../static/images/explainer_image.png"/>
                 <div class="flex flex-row justify-between items-center">
                   <p class="text-center pt-10 px-10">{{ $t('android_step_description')}}</p>
                   <p class="text-center pt-10 px-10">{{ $t('iphone_step_description')}}</p>
@@ -290,6 +293,7 @@
               justify-center
               items-center
               broj
+              mb-5
             "
           >
             2
@@ -310,6 +314,7 @@
               justify-center
               items-center
               broj
+              mb-5
             "
           >
             3
@@ -318,10 +323,11 @@
             <img alt="i-b card app screen 2" src="../static/images/screen_guide_2.png"/>
 
         </div>
-         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
-            <img alt="i-b card logo" class="animate-pulse" height="100" width="100" src="../static/images/logo_white_on_black.png"/>
 
-          <h1 class="lg:text-2xl text-2xl text-center hidden">{{ $t('section_5_h1_5')}}</h1>
+         <div class="as flex flex-col items-center justify-center my-5 mx-14 lg:my-5 lg:mx-5">
+            <img alt="i-b card logo" class="mb-5 animate-pulse" height="60" width="60" src="../static/images/logo_white_on_black.png"/>
+
+          <h1 class="lg:text-2xl text-2xl text-center">{{ $t('section_5_h1_5')}}</h1>
             <img alt="i-b card app screen 3" src="../static/images/screen_guide_3.png"/>
         </div>
       </div>
@@ -338,11 +344,9 @@
 <script lang="ts">
 import '../static/main.css'
 
+
 export default {
-    transition: {
-    name: 'home',
-    mode: 'out-in'
-  },
+  
   head () {
     return {
       
@@ -398,9 +402,8 @@ margin-top:-10px;
 .theme-color-2 {
   background-color : #646464;
 }
-.bg-over {
-  background-color: rgba(52,52,52,0.5);
-}
+
+
 
 .video_1 {
   width: 500px!important;
@@ -413,12 +416,7 @@ margin-top:-10px;
   display: none;
 }
 
-.z-ind-middle {
-  z-index : 30;
-}
-.z-ind {
-  z-index: 999!important;
-}
+
 
 .overlay {
    position: fixed; /* Sit on top of the page content */

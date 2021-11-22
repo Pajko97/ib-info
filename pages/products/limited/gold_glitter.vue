@@ -12,13 +12,13 @@
         </p>
         
         
-        <p class="text-xl font-bold">790.00KN + PDV</p>
+        <p class="text-xl font-bold">560 KN + PDV</p>
       </div>
 
       <div class="max-w-md flex flex-col justify-center items-center mx-20">
           <h1 class="text-4xl pb-5">{{ $t('product_reach_out') }}</h1>
           <p class="px-20 text-center">{{ $t('product_explain') }}</p>
-          <ContactForm/>
+          <ContactFormRequest/>
       </div>
     </div>
     <Footer />

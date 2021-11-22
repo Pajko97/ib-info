@@ -81,6 +81,7 @@
     "hint_h1" : "Have an idea how we can improve our services?",
     "hint_p" : "Send to us an idea and if we implement it, you will recieve card for free!",
     "hint_button" : "GIVE US A HINT",
+    "send_us_hint" : "Send us a hint",
     "_hint_end": "_home_end",
     "footer_products" : "PRODUCTS",
     "footer_compatibility" : "COMPATIBILITY LIST",
@@ -91,7 +92,6 @@
     "footer_refund_and_shipping" : "REFUND & SHIPPING POLICY",
     "footer_privacy" : "PRIVACY POLICY",
     "_footer_end" : "footer end",
-    "products_headline" : "i-b cards Business Products",
     "products_h1_1" : "Premium metal",
     "products_p_1" : "Our most exclusive product - premium, innovative, bespoke.",
     "products_price_1" : "FROM 889.00KN",
@@ -157,6 +157,12 @@
     "product_bamboo_description" : "Standard wooden i-b card. Show your artistic soul. The card comes in a personalized case.",
     "product_cherry_name" : "Cherry wood",
     "product_cherry_description" : "The card comes in a personalized case.",
-    "product_button_text" : "SEE BUTTON"
+    "product_button_text" : "SEE BUTTON",
+    "form_placeholder_name" : "Name",
+    "form_placeholder_email" : "Email",
+    "form_placeholder_phone" : "Phone",
+    "form_placeholder_message" : "Message",
+    "contact_headline" : "Contact us"
+
 }
 

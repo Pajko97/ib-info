@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center lg:my-10 lg:mx-40 mx-14 my-8 items-start">
            <div class="flex flex-col justify-center pt-10 pb-10">
-                <h1 class="text-left pb-20 text-4xl">About us</h1>
+                <h1 class="text-left pb-20 text-4xl">{{ $t('about_headline_1') }}</h1>
                 <p class="text-lg">
                     Nakon godina iskustva, svatko u svom području, odlučili smo se uložiti znanje, vrijeme i trud
                     u novi način komuniciranja koji je vezan uz NFC tehnologiju koja polako postaje
@@ -30,7 +30,7 @@ Cilj nam je zadovoljstvo klijenata i želja za dugotrajnom suradnjom.
                 </p>
            </div>
 
-           <div class="lg:mb-0 mb-3 flex flex-col justify-center">
+           <div class="lg:mb-0 hidden mb-3 flex flex-col justify-center">
                 <h1 class="text-left pb-20 text-4xl">Our team</h1>
                 <div      class="flex flex-col items-evenly justify-evenly">
                    <div class="flex lg:flex-row md:flex-row flex-col mb-5">

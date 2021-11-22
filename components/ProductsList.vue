@@ -3,7 +3,7 @@
     class="flex flex-col justify-center lg:mx-40 mx-10 pt-20 pb-20 items-center"
   >
     <h1 class="lg:text-4xl text-2xl text-left">
-      {{ $t('products_headline ') }}
+      {{ $t('products_headline') }}
     </h1>
     <div class="flex flex-col justify-around items-around">
       <div class="flex flex-col">
@@ -26,8 +26,8 @@
         <div
           class="
             flex flex-row flex-wrap
-            lg:justify-start
-            justify-start
+            lg:justify-center
+            justify-center
             items-center
           "
         >
@@ -102,7 +102,7 @@
               {{ $t('product_golden_shine_description') }}
             </p>
 
-              <nuxt-link :to="localePath('/products/premium/gold')">
+              <nuxt-link :to="localePath('/products/premium/gold_shine')">
               <button
                 class="
                   pr-9
@@ -189,7 +189,7 @@
             <div class="shadow-small"></div>
 
             <h3 class="text-2xl pb-2 text-center font-bold pt-5">
-              {{ $t('product_bamboo_name') }}
+              Bamboo Black
             </h3>
             <p
               class="
@@ -292,7 +292,7 @@
           Limited cards
         </h1>
         <div
-          class="flex flex-col lg:flex-row flex-wrap justify-start items-center"
+          class="flex flex-col lg:flex-row flex-wrap justify-center items-center"
         >
           <div class="flex mx-5 flex-col max-w-sm justify-center items-center">
             <img
@@ -384,41 +384,84 @@
         >
           Standard cards
         </h1>
-        <div class="flex lg:flex-row flex-col justify-start items-center">
+        <div
+          class="
+            flex flex-row flex-wrap
+            lg:justify-center
+            justify-center
+            items-center
+          "
+        >
           <div
             class="
+              max-w-24
+              mx-5
               flex flex-col
-              lg:flex-row
-              justify-start
-              flex-wrap
+              justify-center
               items-center
+              lg:mb-5
+              mb-5
             "
           >
-            <div
-              class="
-                flex
-                mx-5
-                flex-col
-                max-w-sm
-                justify-center
-                items-center
-                lg:mb-0
-                mb-5
-              "
-            >
-              <img
-                alt="Pure white | i-b card"
-                class="w-80"
-                src="../static/images/products/pure_white/pure_white.png"
-              />
-              <div class="shadow-small"></div>
+            <img
+              alt="White Wood | i-b card"
+              class="w-80"
+              src="../static/images/products/white_wood/wood_white.png"
+            />
+            <div class="shadow-small"></div>
 
-              <h3 class="text-2xl pb-2 text-center font-bold pt-5">
-                Pure white
-              </h3>
-              <p class="text-lg pb-5 text-center pl-10 pr-10">
-                {{ $t('product_pure_white_description') }}
-              </p>
+            <h3 class="text-2xl pb-2 text-center font-bold pt-5">
+              White Wood
+            </h3>
+            <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
+              {{ $t('product_white_wood_description') }}
+            </p>
+
+           <nuxt-link :to="localePath('/products/standard/white_wood')">
+              <button
+                class="
+                  pr-9
+                  pl-9
+                  pt-3
+                  pb-3
+                  btn
+                  rounded-full
+                  lg:text-xl
+                  text-lg
+                  theme-color-1
+                  text-white
+                "
+              >
+                {{ $t('single_button_text')}}
+              </button>
+              </nuxt-link>
+            <p class="text-xl font-bold pt-10"></p>
+          </div>
+
+          <div
+            class="
+              max-w-24
+              mx-5
+              flex flex-col
+              justify-center
+              items-center
+              lg:mb-5
+              mb-5
+            "
+          >
+            <img
+              alt="Golden Shine | i-b card"
+              class="w-80"
+              src="../static/images/products/pure_white/pure_white.png"
+            />
+            <div class="shadow-small"></div>
+
+            <h3 class="text-2xl pb-2 text-center font-bold pt-5">
+              Pure White
+            </h3>
+            <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
+              {{ $t('product_pure_white_description') }}
+            </p>
 
               <nuxt-link :to="localePath('/products/standard/pure_white')">
               <button
@@ -438,104 +481,60 @@
                 {{ $t('single_button_text')}}
               </button>
               </nuxt-link>
-              <p class="text-xl font-bold pt-10"></p>
-            </div>
-
-            <div
-              class="
-                flex
-                mx-5
-                flex-col
-                max-w-sm
-                justify-center
-                items-center
-                lg:mb-0
-                mb-5
-              "
-            >
-              <img
-                alt="White Wood | i-b card"
-                class="w-80"
-                src="../static/images/products/white_wood/wood_white.png"
-              />
-              <div class="shadow-small"></div>
-
-              <h3 class="text-2xl pb-2 text-center font-bold pt-5">
-                {{ $t('product_white_wood_name') }}
-              </h3>
-              <p class="text-lg pb-5 text-center pl-10 pr-10">
-                {{ $t('product_white_wood_description') }}
-              </p>
-
-                <nuxt-link :to="localePath('/products/standard/white_wood')">
-              <button
-                class="
-                  pr-9
-                  pl-9
-                  pt-3
-                  pb-3
-                  btn
-                  rounded-full
-                  lg:text-xl
-                  text-lg
-                  theme-color-1
-                  text-white
-                "
-              >
-                {{ $t('single_button_text')}}
-              </button>
-              </nuxt-link>
-              <p class="text-xl font-bold pt-10"></p>
-            </div>
-
-            <div
-              class="
-                flex
-                mx-5
-                flex-col
-                max-w-sm
-                justify-center
-                items-center
-                lg:mb-0
-                mb-5
-              "
-            >
-              <img
-                alt="Cherry Wood | i-b card"
-                class="w-80"
-                src="../static/images/products/cherry_wood/cherry.png"
-              />
-              <div class="shadow-small"></div>
-
-              <h3 class="text-2xl pb-2 text-center font-bold pt-5">
-                {{ $t('product_cherry_name') }}
-              </h3>
-              <p class="text-lg pb-5 text-center pl-10 pr-10">
-                {{ $t('product_cherry_description') }}
-              </p>
-
-                <nuxt-link :to="localePath('/products/standard/cherry_wood')">
-              <button
-                class="
-                  pr-9
-                  pl-9
-                  pt-3
-                  pb-3
-                  btn
-                  rounded-full
-                  lg:text-xl
-                  text-lg
-                  theme-color-1
-                  text-white
-                "
-              >
-                {{ $t('single_button_text')}}
-              </button>
-              </nuxt-link>
-              <p class="text-xl font-bold pt-10"></p>
-            </div>
+            <p class="text-xl font-bold pt-10"></p>
           </div>
+
+          <div
+            class="
+              max-w-24
+              mx-5
+              flex flex-col
+              justify-center
+              items-center
+              lg:mb-5
+              mb-5
+            "
+          >
+            <img
+              alt="Cherry wood | i-b card"
+              class="w-80"
+              src="../static/images/products/cherry_wood/cherry.png"
+            />
+            <div class="shadow-small"></div>
+
+            <h3 class="text-2xl pb-2 text-center font-bold pt-5">
+              Cherry wood
+            </h3>
+            <p class="text-lg pb-5 text-center pl-10 pr-10 max-w-xs">
+              {{ $t('product_cherry_description') }}
+            </p>
+
+             <nuxt-link :to="localePath('/products/standard/cherry_wood')">
+              <button
+                class="
+                  pr-9
+                  pl-9
+                  pt-3
+                  pb-3
+                  btn
+                  rounded-full
+                  lg:text-xl
+                  text-lg
+                  theme-color-1
+                  text-white
+                "
+              >
+                {{ $t('single_button_text')}}
+              </button>
+              </nuxt-link>
+            <p class="text-xl font-bold pt-10"></p>
+          </div>
+
+          
+
+          
         </div>
+          
       </div>
     </div>
   </div>

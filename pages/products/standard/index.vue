@@ -9,7 +9,9 @@
 </template>
 
 <script lang="ts">
+
 export default {
+  
     head() {
       return {
         title: 'Proizvodi - Standard',

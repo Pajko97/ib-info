@@ -15,21 +15,21 @@
                 <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Powerful Black - i-b card sa crnom koznom kutijom" src="../../../static/images/products/black_metal/black_metal_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('black_metal_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('black_metal_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('black_metal_description') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/power_black')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
 
                 <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Golden Shine - i-b card sa crnom koznom kutijom" src="../../../static/images/products/gold/gold_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('gold_metal_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('gold_metal_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('product_glitter_yellow_gift') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/gold')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
 
                 <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Rose Gold - i-b card sa crnom koznom kutijom" src="../../../static/images/products/rose_gold/rose_gold_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('rose_metal_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('rose_metal_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('product_rose_gold_description') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/rose_gold')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
                 <!-- druga tri -->
@@ -37,21 +37,21 @@
                <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Black Matte - i-b card sa crnom koznom kutijom" src="../../../static/images/products/black_pvc/black_pvc_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('product_black_texture_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('product_black_texture_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('product_black_matte_description') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/black_matte')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
 
                  <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Black Bamboo - i-b card sa crnom koznom kutijom" src="../../../static/images/products/black_bamboo/black_bamboo_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('black_bamboo_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('black_bamboo_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('product_bamboo_description') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/black_bamboo')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
 
                  <div class="flex flex-col justify-center pb-24 items-center">
                     <img class="w-80" alt="Rose Gold - i-b card sa crnom koznom kutijom" src="../../../static/images/products/rose_gold_glitter/rose_gold_glitter_gift.png"/>
                     <h1 class="text-3xl font-bold pt-5">{{ $t('rose_glitter_name') }}</h1>
-                    <p class="text-lg max-w-xs text-center">{{ $t('rose_glitter_description') }}</p>
+                    <p class="min-height text-lg max-w-xs text-center">{{ $t('product_glitter_pink_description') }}</p>
                     <nuxt-link :to="localePath('/products/giftbox/rose_gold_glitter')"><button class="rounded-full theme-color-1 text-white mt-12  py-5  px-9 text-xl">{{ $t('product_button_text')}}</button></nuxt-link>
                 </div>
             </div>
@@ -97,6 +97,10 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+}
+.min-height {
+    min-height: 9em;
+    max-height: 9em;
 }
 </style>
 

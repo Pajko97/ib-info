@@ -11,6 +11,18 @@ export default {
   render : {
     fallback : false
   },
+  googleFonts: {
+    families: {
+      // a simple name
+      Roboto: true,
+      
+      // a name with spaces
+      'Nunito+Sans': true,
+  
+      // specific font weights
+      Lato: [300, 400, 500, 600],
+    }
+  },
   generate: {
     fallback: true
   },
@@ -38,6 +50,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: './plugins/GoogleAnalytics.js',
+      mode: 'client'
+    }
     
   ],
 
@@ -67,12 +83,29 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-cookie-control',
+
+    ['nuxt-mail', {
+      message: {
+        to: 'devredhat@gmail.com',
+      },
+      smtp: {
+        host: "smtp.mailtrap.io",
+        port: 587,
+      },
+      auth: {
+        type: 'LOGIN',
+        user: 'dad14f5a842d3c',
+        pass: 'df967fe9b6d741'
+      },
+    }],
   ],
 
   i18n: {

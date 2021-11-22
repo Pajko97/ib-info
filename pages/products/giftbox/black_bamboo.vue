@@ -14,7 +14,7 @@
         </p>
         
         
-        <p class="text-xl font-bold">890.00KN + PDV</p>
+        <p class="text-xl font-bold">540 KN + PDV</p>
       </div>
 
       <div class="max-w-md flex flex-col justify-center items-center mx-20">
