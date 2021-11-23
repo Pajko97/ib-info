@@ -65,10 +65,8 @@
               text-2xl
               bg-white
               rounded-full
-              pl-10
-              pt-3
-              pb-3
-              pr-10
+              pl-7
+              pr-7
             "
           >
             {{ $t('section_4_button') }}
@@ -140,7 +138,7 @@
           mt-3
           lg:-ml-3
           bg-transparent
-          text-3xl text-white
+          text-4xl text-white
           border-2 border-white
           rounded-full
         "
@@ -381,7 +379,7 @@ export default {
 .section-8 {
   background-image: url('../static/images/section_8_bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px -200px;
   background-size: cover;
 }
 .shadow-small {
@@ -461,5 +459,5 @@ hr.solid {
 }
 </style>
 
-
-
+<script lang="ts">
+</script>

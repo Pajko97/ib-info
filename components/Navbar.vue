@@ -63,11 +63,7 @@ export default {
             previous : ''
         }
     },
-  /*   computed: {
-        check_menu: () => {
-            return this.data['data.menu_open'] ? 'otvoren' : '';
-        }
-    }, */
+
     
     methods: {
         mobileMenu() {
