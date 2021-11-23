@@ -2,16 +2,16 @@
 <template>
   <div>
     <NavbarBlack /> 
-    <!-- <ProductsList />
+    <ProductsList />
     <Hint />
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 
 export default {
- /*    head() {
+    head() {
       return {
         title: 'Proizvodi',
         meta: [
@@ -22,6 +22,6 @@ export default {
           }
         ]
       }
-    } */
+    }
 }
 </script>

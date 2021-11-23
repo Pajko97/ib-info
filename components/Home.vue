@@ -43,7 +43,7 @@
         </div>
       <div class="flex flex-col items-center justify-centers z-40">
         
-        <Navbar />
+        <NavbarBlack />
         <div class="flex flex-col justify-space-around ">
     
           
