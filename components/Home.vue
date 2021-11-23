@@ -43,9 +43,8 @@
         </div>
       <div class="flex flex-col items-center justify-centers z-40">
         
-        <NavbarBlack />
         <div class="flex flex-col justify-space-around ">
-    
+          <Navbar/>
           
           <h1
             class="text-center text-white lg:text-6xl text-3xl pr-5 pl-5 mt-32"
@@ -439,13 +438,7 @@ hr.solid {
 .show-video {
   display:block;
 }
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+
 .broj {
   width:60px;
   height:60px;

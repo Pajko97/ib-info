@@ -1,10 +1,10 @@
 <template>
-  <div :class="this.menu_open ? 'pt-0 overlay' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
-    <NuxtLink v-if="!this.menu_open" to="/" ><img src="../static/images/logo_new_black.png"/></NuxtLink>
+  <div :class="menu_open ? 'pt-0 overlay' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
+    <NuxtLink v-if="!menu_open" to="/" ><img src="../static/images/logo_new_black.png"/></NuxtLink>
 
-    <nav :class="this.menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
+    <nav :class="menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
   <div class="max-w-6xl mx-auto lg:px-4 px-0" >
-    <div :class="this.menu_open ? 'bg-black' : '' "  class="flex lg:justify-between justify-center">
+    <div :class="menu_open ? 'bg-black' : '' "  class="flex lg:justify-between justify-center">
 
       <div class="flex space-x-4">
         <!-- logo -->
@@ -28,8 +28,8 @@
       <!-- mobile button goes here -->
       <div class="md:hidden z-40 flex items-center">
         <button @click="mobileMenu" class="mobile-menu-button">
-          <img class="animate-spin mt-10 mb-5" v-if="this.menu_open" src="../static/images/cancel.png"/>
-          <svg v-else :class="this.menu_open ? 'my-5' : '' " class="w-8 h-8 lg:ml-0 ml-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black">
+          <img class="animate-spin mt-10 mb-5" v-if="menu_open" src="../static/images/cancel.png"/>
+          <svg v-else :class="menu_open ? 'my-5' : '' " class="w-8 h-8 lg:ml-0 ml-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
@@ -39,7 +39,7 @@
   </div>
 
   <!-- mobile menu -->
-  <div class="mobile-menu w-screen bg-black md:hidden" :class="this.menu_open ? '' : 'hidden'">
+  <div class="mobile-menu w-screen h-screen bg-black md:hidden z-70" :class="menu_open ? '' : 'hidden'">
     
             <nuxt-link :to="localePath('/')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_home ')}}</p></nuxt-link>
             <nuxt-link :to="localePath('products')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products ')}}</p></nuxt-link>

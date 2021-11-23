@@ -1,12 +1,12 @@
 
 
 <template>
-  <div :class="this.menu_open ? 'pt-0 overlay z-50' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
+  <div :class="menu_open ? 'pt-0 overlay z-50' : 'pt-10' " class="transition flex lg:flex-col flex-row items-center justify-center">
 
-    <img v-if="!this.menu_open" src="../static/images/logo_new_white.png"/>
-    <nav :class="this.menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
+    <img v-if="!menu_open" src="../static/images/logo_new_white.png"/>
+    <nav :class="menu_open ? 'h-screen bg-black' : ''" class="bg-transparent">
   <div class="max-w-6xl mx-auto lg:px-4 px-0">
-    <div :class="this.menu_open ? 'bg-black' : '' "  class="flex lg:justify-between justify-center">
+    <div :class="menu_open ? 'bg-black' : '' "  class="flex lg:justify-between justify-center">
    
       <div class="flex space-x-4">
         <!-- logo -->
@@ -27,11 +27,10 @@
 
       <!-- mobile button goes here -->
       <div class="md:hidden flex items-center">
-        <button @click="mobileMenu" class="mobile-menu-button">
-          <img class="animate-spin mt-10 mb-5" v-if="this.menu_open" src="../static/images/cancel.png"/>
-          <svg v-else :class="this.menu_open ? 'my-5' : '' " class="w-8 h-8 ml-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+        <button class="mobile-menu-button">
+          <NuxtLink to="/menu"><svg class="my-5 w-8 h-8 ml-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          </svg></NuxtLink>
         </button>
       </div>
 
@@ -39,7 +38,7 @@
   </div>
 
   <!-- mobile menu -->
-  <div class="mobile-menu fixed bg-black" :class="this.menu_open ? 'visible z-50' : 'invisible'">
+  <div class="mobile-menu fixed bg-black" :class="menu_open ? 'visible z-50' : 'invisible'">
       <NuxtLink to="/products"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_products') }}</p></NuxtLink>
           <nuxt-link :to="localePath('compatibility')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">{{ $t('nav_compatibility') }}</p></nuxt-link>
           <nuxt-link :to="localePath('/products/giftbox')"><p href="#" class="text-center text-xl py-5 px-3 text-white hover:border-solid border-black">Gift box</p></nuxt-link>
