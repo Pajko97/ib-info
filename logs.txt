@@ -1,0 +1,83 @@
+
+> ib_cards_client@1.0.0 generate C:\Users\Pavle\Desktop\Projects\iBcards\ib_cards_client
+> nuxt generate
+
+i Merging Tailwind config from ~/tailwind.config.js
+i Doing webpack rebuild because components\Cookie.vue modified
+i Production build
+i Bundling for server and client side
+i Target: static
+i Using components loader to optimize imports
+i Discovered Components: node_modules/.cache/nuxt/components/readme.md
+√ Builder initialized
+√ Nuxt files generated
+i Compiling Client
+√ Client: Compiled successfully in 39.94s
+i Compiling Server
+√ Server: Compiled successfully in 8.56s
+i Merging Tailwind config from ~/tailwind.config.js
+i Full static generation activated
+i Generating output directory: dist/
+i Generating pages with full static mode
+√ Generated route "/"
+√ Generated route "/company"
+√ Generated route "/about"
+√ Generated route "/contact"
+√ Generated route "/compatibility"
+√ Generated route "/hint"
+√ Generated route "/menu"
+√ Generated route "/test_home"
+√ Generated route "/products/standard/pure_white"
+√ Generated route "/en/products/standard/pure_white"
+√ Generated route "/en/products/standard/white_wood"
+√ Generated route "/products/giftbox"
+√ Generated route "/products/limited"
+√ Generated route "/en/products/premium"
+√ Generated route "/en/products/limited"
+√ Generated route "/en/about"
+√ Generated route "/products/premium/black_matte"
+√ Generated route "/en"
+√ Generated route "/products/standard/cherry_wood"
+√ Generated route "/en/products/standard/cherry_wood"
+√ Generated route "/products"
+√ Generated route "/products/premium"
+√ Generated route "/en/products"
+√ Generated route "/products/standard"
+√ Generated route "/en/products/standard"
+√ Generated route "/en/products/giftbox/rose_gold_glitter"
+√ Generated route "/en/company"
+√ Generated route "/en/compatibility"
+√ Generated route "/en/hint"
+√ Generated route "/products/product"
+√ Generated route "/en/contact"
+√ Generated route "/products/giftbox/power_black"
+√ Generated route "/en/test_home"
+√ Generated route "/en/menu"
+√ Generated route "/products/limited/pink_glitter"
+√ Generated route "/products/giftbox/rose_gold_glitter"
+√ Generated route "/products/giftbox/black_matte"
+√ Generated route "/en/products/product"
+√ Generated route "/products/premium/black_bamboo"
+√ Generated route "/products/giftbox/gold"
+√ Generated route "/products/giftbox/rose_gold"
+√ Generated route "/products/premium/rose_gold"
+√ Generated route "/products/premium/gold_shine"
+√ Generated route "/products/giftbox/black_bamboo"
+√ Generated route "/products/premium/power_black"
+√ Generated route "/en/products/giftbox/black_bamboo"
+√ Generated route "/en/products/giftbox/gold"
+√ Generated route "/en/products/premium/black_matte"
+√ Generated route "/en/products/limited/pink_glitter"
+√ Generated route "/products/standard/white_wood"
+√ Generated route "/en/products/giftbox/black_matte"
+√ Generated route "/en/products/premium/gold_shine"
+√ Generated route "/en/products/giftbox/rose_gold"
+√ Generated route "/en/products/giftbox/power_black"
+√ Generated route "/en/products/premium/rose_gold"
+√ Generated route "/en/products/premium/power_black"
+√ Generated route "/en/products/giftbox"
+√ Generated route "/products/limited/gold_glitter"
+√ Generated route "/en/products/premium/black_bamboo"
+√ Generated route "/en/products/limited/gold_glitter"
+√ Client-side fallback created: 404.html
+√ Static manifest generated

@@ -4,10 +4,10 @@
       
       <div class="absolute z-10 lg:block hidden">
                  <video
+              id="myvideo"
               loop
               autoplay
               muted
-              id="myvideo"
               class="w-full h-full"
             ><source
             src="../static/videos/landing_bg_video.mp4"
@@ -19,10 +19,10 @@
 
        <div class="absolute z-10 lg:hidden visible">
                  <video
+              id="myvideo"
               loop
               autoplay
               muted
-              id="myvideo"
               class="w-full h-full"
             ><source
             src="../static/videos/landing_bg_mobile.mp4"
@@ -235,10 +235,10 @@
       </h1>
 
                <video
+              id="myvideo"
               loop
               poster="/images/video_placeholder.png"
               controls
-              id="myvideo"
               class="block w-full h-full px-5 pb-5 lg:hidden"
             ><source
             src="../static/videos/explainer_mobile.mp4"
@@ -455,7 +455,6 @@ hr.solid {
 
 * {
   font-family: 'Nunito Sans';
-  text-wrap: text-wrap;
 }
 </style>
 
