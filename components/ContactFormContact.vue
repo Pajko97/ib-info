@@ -1,12 +1,11 @@
 <template>
   <div class="mx-20 my-14 flex flex-col justify-center items-center">
    <!-- This shows a success message if the form was submitted correctly. -->
-    <div v-if="success" class="rounded bg-indigo-500 text-white text-lg p-4">
-      Great! Your message has been sent successfully. I will try to respond
-      quickly.
+    <div v-if="success" class="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded border-solid border-black bg-white text-black text-lg p-4">
+      {{ $t('form_success_message')}}
     </div>
     <form
-      class="w-96 px-14 flex flex-col"
+      class="lg:w-2/5 w-96 px-14 flex flex-col"
       @submit="sendMail"
     >
       <!-- Here an error is displayed if something goes wrong -->
@@ -72,7 +71,7 @@
             type="submit"
             class="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium text-white theme-color-1 hover:bg-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
           >
-            {{ loading ? "Sending Message..." : "SUBMIT" }}
+            {{ loading ? "Sending Message..." : "POŠALJI" }}
           </button>
         </span>
       </div>
@@ -88,7 +87,6 @@ export default {
       loading: false,
       success: false,
       errored: false,
-      errors : [],
       name: "",
       email: "",
       phone: "",
@@ -106,14 +104,19 @@ export default {
           name:  e.target.elements.name.value, 
           email: e.target.elements.email.value,
           phone: e.target.elements.phone.value,
-          message : e.target.elements.message.value
+          message : e.target.elements.message.value,
       })
-      .then(function (response) {
-          console.log(response);
-      })
-      .catch(function (error) {
-          console.log(error);
-      });
+      .then(response => {
+          this.success = true
+          this.errored =false
+        })
+        .catch(error => {
+          console.error(error)
+          this.errored = true
+        })
+        .finally(() => {
+          this.loading = false
+        });
 
     }
     

@@ -79,7 +79,7 @@
     </div>
 
     <div class="section-2 flex flex-col p-5 lg:flex-row bg-white">
-      <div class="mr-20 mb-5 flex flex-col items-start lg:pt-20 lg:pl-20 lg:pb-20">
+      <div class="lg:mr-20 lg:mb-5 flex flex-col lg:items-start items-center lg:pt-20 lg:pl-20 lg:pb-20">
         <h3 class="lg:text-4xl text-xl font-bold text-gray-400">
           {{ $t('home_section_2_h3') }}
         </h3>
@@ -95,6 +95,7 @@
             theme-color-1
             pt-2
             pb-2
+            mb-5
             px-4
             mt-5
             md:pt-5
@@ -108,8 +109,8 @@
           {{ $t('home_section_2_button')}}
         </button>
       </div>
-      <div class="flex flex-col justify-center items-center">
-        <img class="" alt="i-b card - novi nacin povezivanja" src="../static/images/proba5gif.gif" /> 
+      <div class="flex flex-col justify-center lg:pr-20 md:pr-20 pr-0 items-center">
+        <img alt="i-b card - novi nacin povezivanja min-w-96" src="../static/images/proba5gif.gif" /> 
 
       <!-- Ako ne posalje ostavi ovako -->
       </div>
@@ -127,6 +128,7 @@
       <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_1')}}</p>
       <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_2')}}</p>
       <p class="text-4xl text-white text-center font-semibold">{{ $t('section_4_3')}}</p>
+      <NuxtLink to="/products/premium">
       <button
         class="
           btn
@@ -143,7 +145,7 @@
         "
       >
         {{ $t('home_button') }}
-      </button>
+      </button></NuxtLink>
     </div>
     <!-- Proizvodi -->
             <h1 class="text-4xl text-center pt-10">Svi proizvodi</h1>
@@ -234,9 +236,8 @@
       </h1>
 
                <video
-              id="myvideo"
-              loop
-              poster="/images/video_placeholder.png"
+              id="myvideo_exp"
+              poster="/images/exp_9_16.png"
               controls
               class="block w-full h-full px-5 pb-5 lg:hidden"
             ><source
@@ -349,7 +350,7 @@ export default {
       
       title: 'i-b cards',
       meta: [
-        { hid: 'description__home', name: 'description', content: 'Opis stranice' }
+        { hid: 'description__home', name: 'description', content: 'i-b card - Digital Buesiness Cards' }
       ]
     }
   }
@@ -358,12 +359,7 @@ export default {
 </script>
 
 <style scoped>
-.section-1 {
-  background-image: url('../static/images/home_bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+
 
 .section-3 {
   background-color: rgba(242, 242, 242, 1);

@@ -3,15 +3,15 @@
     <div class="theme-color-1 flex flex-col lg:flex-row justify-around">
 
        <div class="flex flex-col justify-center items-center">
-            <img class="pb-10" src="../static/images/footer_logo.png"/>
+            <img class="pb-10" src="../static/images/logo_new_white.png"/>
        </div>
 
 
-       <div class="flex flex-col text-base lg:text-lg text-white lg:pt-5 pt-0">
-           <nuxt-link :to="localePath('products')"><a class="lg:pb-8">{{ $t('footer_products') }}</a></nuxt-link>
-           <nuxt-link :to="localePath('compatibility')"><a class="lg:pb-8">{{ $t('footer_compatibility') }}</a></nuxt-link>
-            <nuxt-link :to="localePath('contact')"><a class="lg:pb-8">{{ $t('footer_contact') }}</a></nuxt-link>
-            <nuxt-link :to="localePath('privacy')"><a class="lg:pb-8">{{ $t('footer_privacy') }}</a></nuxt-link>
+       <div class="flex flex-col lg:items-start items-center text-base lg:text-lg text-white lg:pt-5 pt-0">
+           <nuxt-link :to="localePath('products')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_products') }}</a></nuxt-link>
+           <nuxt-link :to="localePath('compatibility')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_compatibility') }}</a></nuxt-link>
+            <nuxt-link :to="localePath('contact')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_contact') }}</a></nuxt-link>
+            <nuxt-link :to="localePath('privacy')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_privacy') }}</a></nuxt-link>
                       
        </div>
 
@@ -20,11 +20,11 @@
            <a class="lg:pb-8">{{ $t('footer_order_tracker') }}</a> -->
        </div>
 
-        <div class="flex flex-col items-start text-base pb-5 lg:pb-0 md:pb-0 lg:text-lg text-white lg:pt-5 pt-5">
-                    <p class="text-sm">You Rich d.o.o.</p>
-                    <p class="text-sm">Željeznička 52,</p>
-                    <p class="text-sm">10000 Zagreb</p>
-                    <p class="text-sm">VAT: 74941513737</p>
+        <div class="flex flex-col lg:items-start items-center text-base pb-5 lg:pb-0 md:pb-0 lg:text-lg text-white lg:pt-5 pt-5">
+                    <p class="text-sm text-center lg:text-left">You Rich d.o.o.</p>
+                    <p class="text-sm text-center lg:text-left">Željeznička 52,</p>
+                    <p class="text-sm text-center lg:text-left">10000 Zagreb</p>
+                    <p class="text-sm text-center lg:text-left">VAT: 74941513737</p>
 
           <!--  <div class="flex flex-row items-center mt-5 justify-center">
                <img alt="Facebook icon" class="pr-2" src="../static/images/facebook_icon.png" />
@@ -34,8 +34,7 @@
            </div> -->
        </div>
     </div>
-    <CookieBox/>
-    <p class="text-white text-center text-sm -mb-5">&copy; Copyright 2021 You Rich D.O.O. </p>
+    <p class="text-white text-center text-sm -mb-5">&copy; Copyright 2021 You Rich d.o.o. </p>
     </div>
 </template>
 

@@ -42,7 +42,7 @@
                   text-white
                 "
               >
-                SEE MORE
+                {{ $t('single_button_text')}}
               </button>
               <p class="text-xl font-bold pt-10"></p>
             </div>
@@ -87,7 +87,7 @@
                   text-white
                 "
               >
-                SEE MORE
+               {{ $t('single_button_text')}}
               </button>
               <p class="text-xl font-bold pt-10"></p>
             </div>
@@ -132,7 +132,8 @@
                   text-white
                 "
               >
-                SEE MORE
+               {{ $t('single_button_text')}}
+
               </button>
               <p class="text-xl font-bold pt-10"></p>
             </div>

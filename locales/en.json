@@ -28,12 +28,13 @@
     "alt_giftbox_img_4" : "Black texture - i-b card sa crnom koznom kutijom",
     "alt_giftbox_img_5" : "Black bamboo - i-b card sa crnom koznom kutijom",
     "alt_giftbox_img_6" : "Rose gold glitter - i-b card sa crnom koznom kutijom",
-    "nav_products" : "Products",
+      "nav_products" : "Products",
     "nav_compatibility" : "Compatibility list",
-    "nav_about" : "About us",
+    "nav_about" : "About",
     "nav_contact" : "Contact",
+    "nav_home" : "Home",
+    "nav_gift" : "Gift box",
     "nav_language": "Language",
-    "nav_giftbox" : "Gift box",
     "_nav_end": "_nav_end",
     "home_h1" : "UNLEASH THE POWER OF NETWORKING",
     "home_h2" : "Share information with just a tap",
@@ -113,11 +114,11 @@
     "compatibility_nokia" : "All phones after 2014 including:",
     "compatibility_samsung" : "All phones after 2014 including:",
     "compatibility_huawei" : "All phones after 2016 including:",
-    "_products_end" : "",
     "about_headline_1" : "About us",
     "about_headline_2" : "Our team",
     "_about_end" : "",
     "contact_headline" : "Contact us",
+    "form_sucess_message" : "Your message was sent successfully! We will reach back to you soon.",
     "contact_fullname" : "Full name",
     "contact_email" : "Email",
     "contact_phone" : "Phone",
@@ -162,7 +163,7 @@
     "form_placeholder_email" : "Email",
     "form_placeholder_phone" : "Phone",
     "form_placeholder_message" : "Message",
-    "contact_headline" : "Contact us"
+    "privacy_headline" : "Privacy Policy"
 
 }
 
