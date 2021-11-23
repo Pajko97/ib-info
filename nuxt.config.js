@@ -11,6 +11,9 @@ export default {
   render : {
     fallback : false
   },
+  router: {
+    prefetchLinks: false
+  },
   googleFonts: {
     families: {
       // a simple name
