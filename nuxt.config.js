@@ -8,12 +8,7 @@ export default {
     color: '#3B8070',
     background: 'white'
   },
-  render : {
-    fallback : false
-  },
-  router: {
-    prefetchLinks: false
-  },
+
   googleFonts: {
     families: {
       // a simple name
@@ -93,22 +88,7 @@ export default {
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/axios',
-    'nuxt-cookie-control',
-
-    ['nuxt-mail', {
-      message: {
-        to: 'devredhat@gmail.com',
-      },
-      smtp: {
-        host: "smtp.mailtrap.io",
-        port: 587,
-      },
-      auth: {
-        type: 'LOGIN',
-        user: 'dad14f5a842d3c',
-        pass: 'df967fe9b6d741'
-      },
-    }],
+    'nuxt-cookie-control'
   ],
 
   i18n: {
