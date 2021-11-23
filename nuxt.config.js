@@ -21,10 +21,8 @@ export default {
       Lato: [300, 400, 500, 600],
     }
   },
-  generate: {
-    fallback: true
-  },
-  ssr: true,
+
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ib_cards_client',
