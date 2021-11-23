@@ -26,7 +26,7 @@ export default {
   generate: {
     fallback: true
   },
-  ssl: false,
+  ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ib_cards_client',
