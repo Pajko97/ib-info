@@ -2,7 +2,7 @@ import i18n from './config/i18n'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
   loadingIndicator: {
     name: 'circle',
     color: '#3B8070',
