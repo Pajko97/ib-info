@@ -7,7 +7,7 @@
        </div>
 
 
-       <div class="flex flex-col lg:items-start items-center text-base lg:text-lg text-white lg:pt-5 pt-0">
+       <div class="flex flex-col lg:items-start items-center text-base lg:text-lg text-white pt-0 lg:pb-5">
            <nuxt-link :to="localePath('products')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_products') }}</a></nuxt-link>
            <nuxt-link :to="localePath('compatibility')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_compatibility') }}</a></nuxt-link>
             <nuxt-link :to="localePath('contact')"><a class="lg:pb-8 text-center lg:text-left">{{ $t('footer_contact') }}</a></nuxt-link>

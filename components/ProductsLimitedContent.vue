@@ -1,6 +1,13 @@
 <template>
   <div class="flex flex-col justify-center pt-20 pb-20 lg:mx-40 mx-10 items-center">
     <h1 class="lg:text-4xl text-2xl text-left pb-20">Standard cards</h1>
+    <!--    <div class="flex flex-col lg:block hidden absolute top-0 right-0 lg:mr-5 lg:mt-5 items-center text-center justify-center z-20">
+            <p class="text-base text-black pb-2">Language</p>
+            <div class="flex flex-row">
+              <nuxt-link class="text-white mr-2 text-sm px-2 py-2" :to="switchLocalePath('en')"><img width="40" height="40"  src="../static/images/flag_uk.png"/></nuxt-link>
+              <nuxt-link class="text-white text-sm px-2 py-2" :to="switchLocalePath('hr')"><img width="40"  height="40"  src="../static/images/croatia_flag.png"/></nuxt-link>
+            </div>
+        </div> -->
     <div class="flex flex-col lg:flex-row justify-around items-around">
          
 
